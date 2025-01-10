@@ -1,0 +1,11 @@
+framework module LogDropSDK {
+  umbrella header "LogDropSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module LogDropSDK.Swift {
+  header "LogDropSDK-Swift.h"
+  requires objc
+}
