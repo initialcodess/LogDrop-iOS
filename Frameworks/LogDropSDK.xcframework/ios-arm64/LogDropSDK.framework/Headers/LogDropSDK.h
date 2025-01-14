@@ -10,8 +10,5 @@
 //! Project version number for LogDropSDK.
 FOUNDATION_EXPORT double LogDropSDKVersionNumber;
 
-//! Project version string for LogDropSDK.
-FOUNDATION_EXPORT const unsigned char LogDropSDKVersionString[];
-
 
 

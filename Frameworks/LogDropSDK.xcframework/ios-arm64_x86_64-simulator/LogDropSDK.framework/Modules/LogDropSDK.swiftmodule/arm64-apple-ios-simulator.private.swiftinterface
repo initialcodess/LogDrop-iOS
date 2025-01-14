@@ -13,9 +13,6 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers public class LogManager {
-  @objc deinit
-}
 public struct LogDropConfig {
   public var apiKey: Swift.String
   public var isLoggingEnabled: Swift.Bool
@@ -32,18 +29,14 @@ public struct LogDropConfig {
   }
 }
 @_hasMissingDesignatedInitializers public class LogDrop {
-  public static let shared: LogDropSDK.LogDrop
-  public func initialize(with config: LogDropSDK.LogDropConfig)
-  public func uploadLogs(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
-  public func onRemoteMessageReceived(_ userInfo: [Swift.AnyHashable : Any])
-  public func updateUser(userUuid: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
-  public func pushTokenUpdate(apnsToken: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  @_hasMissingDesignatedInitializers public class Logger {
-    public static func e(_ message: Swift.String, id: Swift.String? = nil)
-    public static func d(_ message: Swift.String, id: Swift.String? = nil)
-    public static func i(_ message: Swift.String, id: Swift.String? = nil)
-    public static func w(_ message: Swift.String, id: Swift.String? = nil)
-    @objc deinit
-  }
+  public static func initialize(with config: LogDropSDK.LogDropConfig)
+  public static func sendLogs(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
+  public static func onRemoteMessageReceived(_ userInfo: [Swift.AnyHashable : Any])
+  public static func updateUser(userUuid: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
+  public static func pushTokenUpdate(apnsToken: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
+  public static func e(_ message: Swift.String, id: Swift.String? = nil)
+  public static func d(_ message: Swift.String, id: Swift.String? = nil)
+  public static func i(_ message: Swift.String, id: Swift.String? = nil)
+  public static func w(_ message: Swift.String, id: Swift.String? = nil)
   @objc deinit
 }
