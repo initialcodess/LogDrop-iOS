@@ -1557,14 +1557,14 @@
       "kind": "StringLiteral",
       "offset": 134,
       "length": 13,
-      "value": "\"1.0.0-beta2\""
+      "value": "\"1.0.0-beta3\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 174,
-      "length": 30,
-      "value": "\"http:\/\/logdrop.net:8080\/api\/\""
+      "length": 32,
+      "value": "\"https:\/\/server.logdrop.io\/api\/\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogFileManager.swift",
