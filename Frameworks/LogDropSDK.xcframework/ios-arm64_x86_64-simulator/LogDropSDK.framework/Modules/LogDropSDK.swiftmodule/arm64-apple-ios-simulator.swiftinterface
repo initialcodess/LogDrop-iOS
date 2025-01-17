@@ -34,9 +34,9 @@ public struct LogDropConfig {
   public static func onRemoteMessageReceived(_ userInfo: [Swift.AnyHashable : Any])
   public static func updateUser(userUuid: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
   public static func pushTokenUpdate(apnsToken: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
-  public static func e(_ message: Swift.String, id: Swift.String? = nil)
-  public static func d(_ message: Swift.String, id: Swift.String? = nil)
-  public static func i(_ message: Swift.String, id: Swift.String? = nil)
-  public static func w(_ message: Swift.String, id: Swift.String? = nil)
+  public static func e(_ message: Swift.String, id: Swift.String? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func d(_ message: Swift.String, id: Swift.String? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func i(_ message: Swift.String, id: Swift.String? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func w(_ message: Swift.String, id: Swift.String? = nil, file: Swift.String = #file, line: Swift.Int = #line)
   @objc deinit
 }

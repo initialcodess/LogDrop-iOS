@@ -992,7 +992,7 @@
           {
             "kind": "Function",
             "name": "e",
-            "printedName": "e(_:id:)",
+            "printedName": "e(_:id:file:line:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1019,11 +1019,25 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10LogDropSDK0aB0C1e_2idySS_SSSgtFZ",
-            "mangledName": "$s10LogDropSDK0aB0C1e_2idySS_SSSgtFZ",
+            "usr": "s:10LogDropSDK0aB0C1e_2id4file4lineySS_SSSgSSSitFZ",
+            "mangledName": "$s10LogDropSDK0aB0C1e_2id4file4lineySS_SSSgSSSitFZ",
             "moduleName": "LogDropSDK",
             "static": true,
             "declAttributes": [
@@ -1035,7 +1049,7 @@
           {
             "kind": "Function",
             "name": "d",
-            "printedName": "d(_:id:)",
+            "printedName": "d(_:id:file:line:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1062,11 +1076,25 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10LogDropSDK0aB0C1d_2idySS_SSSgtFZ",
-            "mangledName": "$s10LogDropSDK0aB0C1d_2idySS_SSSgtFZ",
+            "usr": "s:10LogDropSDK0aB0C1d_2id4file4lineySS_SSSgSSSitFZ",
+            "mangledName": "$s10LogDropSDK0aB0C1d_2id4file4lineySS_SSSgSSSitFZ",
             "moduleName": "LogDropSDK",
             "static": true,
             "declAttributes": [
@@ -1078,7 +1106,7 @@
           {
             "kind": "Function",
             "name": "i",
-            "printedName": "i(_:id:)",
+            "printedName": "i(_:id:file:line:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1105,11 +1133,25 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10LogDropSDK0aB0C1i_2idySS_SSSgtFZ",
-            "mangledName": "$s10LogDropSDK0aB0C1i_2idySS_SSSgtFZ",
+            "usr": "s:10LogDropSDK0aB0C1i_2id4file4lineySS_SSSgSSSitFZ",
+            "mangledName": "$s10LogDropSDK0aB0C1i_2id4file4lineySS_SSSgSSSitFZ",
             "moduleName": "LogDropSDK",
             "static": true,
             "declAttributes": [
@@ -1121,7 +1163,7 @@
           {
             "kind": "Function",
             "name": "w",
-            "printedName": "w(_:id:)",
+            "printedName": "w(_:id:file:line:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1148,11 +1190,25 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10LogDropSDK0aB0C1w_2idySS_SSSgtFZ",
-            "mangledName": "$s10LogDropSDK0aB0C1w_2idySS_SSSgtFZ",
+            "usr": "s:10LogDropSDK0aB0C1w_2id4file4lineySS_SSSgSSSitFZ",
+            "mangledName": "$s10LogDropSDK0aB0C1w_2id4file4lineySS_SSSgSSSitFZ",
             "moduleName": "LogDropSDK",
             "static": true,
             "declAttributes": [
@@ -1506,35 +1562,35 @@
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2537,
+      "offset": 2797,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2564,
+      "offset": 2824,
       "length": 9,
       "value": "\"WARNING\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2590,
+      "offset": 2850,
       "length": 6,
       "value": "\"INFO\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2614,
+      "offset": 2874,
       "length": 7,
       "value": "\"DEBUG\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2640,
+      "offset": 2900,
       "length": 8,
       "value": "\"HEADER\""
     },
@@ -1548,7 +1604,7 @@
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3349,
+      "offset": 3356,
       "length": 5,
       "value": "false"
     },
@@ -1557,7 +1613,7 @@
       "kind": "StringLiteral",
       "offset": 134,
       "length": 13,
-      "value": "\"1.0.0-beta3\""
+      "value": "\"1.0.0-beta4\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/Constants.swift",
