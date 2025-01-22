@@ -1747,98 +1747,91 @@
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
-      "offset": 364,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
-      "kind": "StringLiteral",
-      "offset": 409,
+      "offset": 369,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 451,
+      "offset": 411,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
-      "offset": 493,
+      "offset": 453,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "Array",
-      "offset": 610,
+      "offset": 570,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 645,
+      "offset": 605,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 694,
+      "offset": 654,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
-      "offset": 815,
+      "offset": 775,
       "length": 12,
       "value": "\"deviceUuid\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
-      "offset": 876,
+      "offset": 836,
       "length": 17,
       "value": "\"updatedUserUuid\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
-      "offset": 944,
+      "offset": 904,
       "length": 18,
       "value": "\"logFileSizeLimit\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1013,
+      "offset": 973,
       "length": 18,
       "value": "\"localDbSizeLimit\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1078,
+      "offset": 1038,
       "length": 15,
       "value": "\"isSdkDisabled\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1135,
+      "offset": 1095,
       "length": 11,
       "value": "\"pushToken\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1193,
+      "offset": 1153,
       "length": 15,
       "value": "\"pushTokenSent\""
     },
@@ -1896,7 +1889,7 @@
       "kind": "StringLiteral",
       "offset": 134,
       "length": 13,
-      "value": "\"1.0.0-beta6\""
+      "value": "\"1.0.0-beta7\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/Constants.swift",
