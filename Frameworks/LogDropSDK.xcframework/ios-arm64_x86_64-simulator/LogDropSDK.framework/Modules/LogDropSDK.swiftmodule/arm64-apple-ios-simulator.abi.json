@@ -1896,7 +1896,7 @@
       "kind": "StringLiteral",
       "offset": 134,
       "length": 13,
-      "value": "\"1.0.0-beta5\""
+      "value": "\"1.0.0-beta6\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/Constants.swift",
