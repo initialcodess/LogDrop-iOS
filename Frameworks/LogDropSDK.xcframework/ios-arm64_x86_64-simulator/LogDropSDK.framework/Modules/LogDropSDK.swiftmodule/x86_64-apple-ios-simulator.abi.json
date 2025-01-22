@@ -184,6 +184,91 @@
           },
           {
             "kind": "Var",
+            "name": "baseUrl",
+            "printedName": "baseUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10LogDropSDK0aB6ConfigV7baseUrlSSvp",
+            "mangledName": "$s10LogDropSDK0aB6ConfigV7baseUrlSSvp",
+            "moduleName": "LogDropSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LogDropSDK0aB6ConfigV7baseUrlSSvg",
+                "mangledName": "$s10LogDropSDK0aB6ConfigV7baseUrlSSvg",
+                "moduleName": "LogDropSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LogDropSDK0aB6ConfigV7baseUrlSSvs",
+                "mangledName": "$s10LogDropSDK0aB6ConfigV7baseUrlSSvs",
+                "moduleName": "LogDropSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LogDropSDK0aB6ConfigV7baseUrlSSvM",
+                "mangledName": "$s10LogDropSDK0aB6ConfigV7baseUrlSSvM",
+                "moduleName": "LogDropSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isLoggingEnabled",
             "printedName": "isLoggingEnabled",
             "children": [
@@ -269,19 +354,19 @@
           },
           {
             "kind": "Var",
-            "name": "baseUrl",
-            "printedName": "baseUrl",
+            "name": "defaultSDKDisabled",
+            "printedName": "defaultSDKDisabled",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10LogDropSDK0aB6ConfigV7baseUrlSSvp",
-            "mangledName": "$s10LogDropSDK0aB6ConfigV7baseUrlSSvp",
+            "usr": "s:10LogDropSDK0aB6ConfigV18defaultSDKDisabledSbvp",
+            "mangledName": "$s10LogDropSDK0aB6ConfigV18defaultSDKDisabledSbvp",
             "moduleName": "LogDropSDK",
             "declAttributes": [
               "HasStorage",
@@ -296,14 +381,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10LogDropSDK0aB6ConfigV7baseUrlSSvg",
-                "mangledName": "$s10LogDropSDK0aB6ConfigV7baseUrlSSvg",
+                "usr": "s:10LogDropSDK0aB6ConfigV18defaultSDKDisabledSbvg",
+                "mangledName": "$s10LogDropSDK0aB6ConfigV18defaultSDKDisabledSbvg",
                 "moduleName": "LogDropSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -320,14 +405,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10LogDropSDK0aB6ConfigV7baseUrlSSvs",
-                "mangledName": "$s10LogDropSDK0aB6ConfigV7baseUrlSSvs",
+                "usr": "s:10LogDropSDK0aB6ConfigV18defaultSDKDisabledSbvs",
+                "mangledName": "$s10LogDropSDK0aB6ConfigV18defaultSDKDisabledSbvs",
                 "moduleName": "LogDropSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -344,8 +429,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10LogDropSDK0aB6ConfigV7baseUrlSSvM",
-                "mangledName": "$s10LogDropSDK0aB6ConfigV7baseUrlSSvM",
+                "usr": "s:10LogDropSDK0aB6ConfigV18defaultSDKDisabledSbvM",
+                "mangledName": "$s10LogDropSDK0aB6ConfigV18defaultSDKDisabledSbvM",
                 "moduleName": "LogDropSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -535,6 +620,33 @@
                 "declKind": "Func",
                 "usr": "s:10LogDropSDK0aB6ConfigV7BuilderC17setLoggingEnabledyAESbF",
                 "mangledName": "$s10LogDropSDK0aB6ConfigV7BuilderC17setLoggingEnabledyAESbF",
+                "moduleName": "LogDropSDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setDefaultSDKDisabledValue",
+                "printedName": "setDefaultSDKDisabledValue(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "LogDropSDK.LogDropConfig.Builder",
+                    "usr": "s:10LogDropSDK0aB6ConfigV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10LogDropSDK0aB6ConfigV7BuilderC26setDefaultSDKDisabledValueyAESbF",
+                "mangledName": "$s10LogDropSDK0aB6ConfigV7BuilderC26setDefaultSDKDisabledValueyAESbF",
                 "moduleName": "LogDropSDK",
                 "declAttributes": [
                   "AccessControl"
@@ -930,8 +1042,8 @@
           },
           {
             "kind": "Function",
-            "name": "pushTokenUpdate",
-            "printedName": "pushTokenUpdate(apnsToken:completion:)",
+            "name": "onNewApnsToken",
+            "printedName": "onNewApnsToken(apnsToken:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -943,44 +1055,11 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Swift.Bool, any Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.Bool, any Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ],
-                "hasDefaultArg": true
               }
             ],
             "declKind": "Func",
-            "usr": "s:10LogDropSDK0aB0C15pushTokenUpdate04apnsE010completionySS_ys6ResultOySbs5Error_pGctFZ",
-            "mangledName": "$s10LogDropSDK0aB0C15pushTokenUpdate04apnsE010completionySS_ys6ResultOySbs5Error_pGctFZ",
+            "usr": "s:10LogDropSDK0aB0C14onNewApnsToken04apnsG0ySS_tFZ",
+            "mangledName": "$s10LogDropSDK0aB0C14onNewApnsToken04apnsG0ySS_tFZ",
             "moduleName": "LogDropSDK",
             "static": true,
             "declAttributes": [
@@ -1302,6 +1381,168 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "LogDropError",
+        "printedName": "LogDropError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10LogDropSDK0aB5ErrorV16errorDescriptionSSSgvp",
+            "mangledName": "$s10LogDropSDK0aB5ErrorV16errorDescriptionSSSgvp",
+            "moduleName": "LogDropSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LogDropSDK0aB5ErrorV16errorDescriptionSSSgvg",
+                "mangledName": "$s10LogDropSDK0aB5ErrorV16errorDescriptionSSSgvg",
+                "moduleName": "LogDropSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LogDropSDK0aB5ErrorV16errorDescriptionSSSgvs",
+                "mangledName": "$s10LogDropSDK0aB5ErrorV16errorDescriptionSSSgvs",
+                "moduleName": "LogDropSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LogDropSDK0aB5ErrorV16errorDescriptionSSSgvM",
+                "mangledName": "$s10LogDropSDK0aB5ErrorV16errorDescriptionSSSgvM",
+                "moduleName": "LogDropSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10LogDropSDK0aB5ErrorV",
+        "mangledName": "$s10LogDropSDK0aB5ErrorV",
+        "moduleName": "LogDropSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1449,22 +1690,29 @@
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 706,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 750,
+      "offset": 886,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 934,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 987,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
       "kind": "Array",
-      "offset": 818,
+      "offset": 1058,
       "length": 2,
       "value": "[]"
     },
@@ -1533,64 +1781,99 @@
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 645,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 694,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
-      "offset": 728,
+      "offset": 815,
       "length": 12,
       "value": "\"deviceUuid\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
-      "offset": 789,
+      "offset": 876,
       "length": 17,
       "value": "\"updatedUserUuid\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
-      "offset": 857,
+      "offset": 944,
       "length": 18,
       "value": "\"logFileSizeLimit\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
-      "offset": 926,
+      "offset": 1013,
       "length": 18,
       "value": "\"localDbSizeLimit\""
     },
     {
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1078,
+      "length": 15,
+      "value": "\"isSdkDisabled\""
+    },
+    {
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1135,
+      "length": 11,
+      "value": "\"pushToken\""
+    },
+    {
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1193,
+      "length": 15,
+      "value": "\"pushTokenSent\""
+    },
+    {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2797,
+      "offset": 2407,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2824,
+      "offset": 2434,
       "length": 9,
       "value": "\"WARNING\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2850,
+      "offset": 2460,
       "length": 6,
       "value": "\"INFO\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2874,
+      "offset": 2484,
       "length": 7,
       "value": "\"DEBUG\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2900,
+      "offset": 2510,
       "length": 8,
       "value": "\"HEADER\""
     },
@@ -1604,7 +1887,7 @@
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3356,
+      "offset": 3348,
       "length": 5,
       "value": "false"
     },
@@ -1613,7 +1896,7 @@
       "kind": "StringLiteral",
       "offset": 134,
       "length": 13,
-      "value": "\"1.0.0-beta4\""
+      "value": "\"1.0.0-beta5\""
     },
     {
       "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/Constants.swift",

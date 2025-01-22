@@ -15,13 +15,15 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 public struct LogDropConfig {
   public var apiKey: Swift.String
-  public var isLoggingEnabled: Swift.Bool
   public var baseUrl: Swift.String
+  public var isLoggingEnabled: Swift.Bool
+  public var defaultSDKDisabled: Swift.Bool
   public var sensitiveInfoFilter: [Foundation.NSRegularExpression]
   public class Builder {
     public init()
     public func setApiKey(_ apiKey: Swift.String) -> LogDropSDK.LogDropConfig.Builder
     public func setLoggingEnabled(_ isLoggingEnabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
+    public func setDefaultSDKDisabledValue(_ defaultSDKDisabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
     public func setSensitiveInfoFilter(sensitiveInfoFilter: [Foundation.NSRegularExpression]) -> LogDropSDK.LogDropConfig.Builder
     public func setBaseUrl(_ baseUrl: Swift.String) -> LogDropSDK.LogDropConfig.Builder
     public func build() -> LogDropSDK.LogDropConfig
@@ -33,10 +35,13 @@ public struct LogDropConfig {
   public static func sendLogs(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
   public static func onRemoteMessageReceived(_ userInfo: [Swift.AnyHashable : Any])
   public static func updateUser(userUuid: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
-  public static func pushTokenUpdate(apnsToken: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
+  public static func onNewApnsToken(apnsToken: Swift.String)
   public static func e(_ message: Swift.String, id: Swift.String? = nil, file: Swift.String = #file, line: Swift.Int = #line)
   public static func d(_ message: Swift.String, id: Swift.String? = nil, file: Swift.String = #file, line: Swift.Int = #line)
   public static func i(_ message: Swift.String, id: Swift.String? = nil, file: Swift.String = #file, line: Swift.Int = #line)
   public static func w(_ message: Swift.String, id: Swift.String? = nil, file: Swift.String = #file, line: Swift.Int = #line)
   @objc deinit
+}
+public struct LogDropError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String?
 }
