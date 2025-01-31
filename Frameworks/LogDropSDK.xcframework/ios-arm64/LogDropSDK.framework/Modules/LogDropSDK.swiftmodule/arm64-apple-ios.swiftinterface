@@ -13,6 +13,11 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct LogFlow : Swift.Codable {
+  public init(name: Swift.String, id: Swift.String, customAttributes: [Swift.String : Swift.String]? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct LogDropConfig {
   public var apiKey: Swift.String
   public var baseUrl: Swift.String
@@ -36,10 +41,10 @@ public struct LogDropConfig {
   public static func onRemoteMessageReceived(_ userInfo: [Swift.AnyHashable : Any])
   public static func updateUser(userUuid: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
   public static func onNewApnsToken(apnsToken: Swift.String)
-  public static func e(_ message: Swift.String, id: Swift.String? = nil, file: Swift.String = #file, line: Swift.Int = #line)
-  public static func d(_ message: Swift.String, id: Swift.String? = nil, file: Swift.String = #file, line: Swift.Int = #line)
-  public static func i(_ message: Swift.String, id: Swift.String? = nil, file: Swift.String = #file, line: Swift.Int = #line)
-  public static func w(_ message: Swift.String, id: Swift.String? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func e(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func d(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func i(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func w(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
   @objc deinit
 }
 public struct LogDropError : Foundation.LocalizedError {
