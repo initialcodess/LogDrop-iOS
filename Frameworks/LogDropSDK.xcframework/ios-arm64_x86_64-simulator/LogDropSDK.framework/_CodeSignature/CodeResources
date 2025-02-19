@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yYa7Gzqu6hoZMhstWG5UTu1kcbo=
+		tN8m0GkQNja03yH/CZ7CwcEG/uw=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		uA79kszURm75Ydl9QKc9dOJtNJU=
+		5VzW3rE8rJ1ymEs2qA3r3npWh9c=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5W3ERip0TDz1vM/f+KLrTrQxliI=
+		o+JhasKNVCR3RLYmGIhlCFSZOWE=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		uA79kszURm75Ydl9QKc9dOJtNJU=
+		5VzW3rE8rJ1ymEs2qA3r3npWh9c=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		T7Xfn8V3Kvpwu/q7r7xI0U0jrXo=
+		pANxtJ0QX9XfdjPVB/sNaFGdP/4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ptzkbn7agbwbR/DQQjWQiRgCAqasSek2T5uk2QdwPSQ=
+			KfeISPDAvoU9CMPbUjlk+NhL6SnGAiG4/Z8rTjfwWDI=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r6biIEco99AdSt0xDjlufYD6xLL92+7LpbO1UbFXWTU=
+			5bFkq7VGnFjB30rRfKYNhzGB67fzuq7xhiG5QCpz5o4=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ptzkbn7agbwbR/DQQjWQiRgCAqasSek2T5uk2QdwPSQ=
+			KfeISPDAvoU9CMPbUjlk+NhL6SnGAiG4/Z8rTjfwWDI=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			quLELKfPRvzhO8OsX/ogTL9k+MIjmHy7fYblNSVekT4=
+			ktkxCaMMAblaVU/f7b9K91xM9Dv0EjE/Dipg1TIDtc4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
