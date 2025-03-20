@@ -22,9 +22,9 @@ Monitor Your App in Real-Time, View All Errors on a Single Dashboard!'
     LICENSE
   }
   spec.author       = { 'InitialCode' => 'engineering@initialcode.io' }
-  spec.source       = { :git => 'https://github.com/initialcodess/LogDrop-iOS.git', :tag => "#{spec.version}" }
+  spec.source       = { :git => 'https://github.com/initialcodess/LogDrop-iOS.git', :branch => 'main', :tag => "#{spec.version}" }
   spec.ios.deployment_target = '13.0'
   spec.swift_version = '5.0'
-  spec.vendored_frameworks = 'Frameworks/LogDropSDK.xcframework'
+  spec.ios.vendored_frameworks = 'Frameworks/LogDropSDK.xcframework'
 end
 
