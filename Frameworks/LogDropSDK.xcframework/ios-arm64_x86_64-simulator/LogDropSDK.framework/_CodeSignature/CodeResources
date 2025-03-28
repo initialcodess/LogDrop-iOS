@@ -60,10 +60,6 @@
 		<data>
 		9KyZ3NLMp1eYpJ/n7XxQA7VpYJM=
 		</data>
-		<key>upload_dsym.sh</key>
-		<data>
-		kSWEpTxMsOce4624JaZ5aUTARuo=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -156,13 +152,6 @@
 			<key>hash2</key>
 			<data>
 			Fif3UoDkeu8u+Y/XfyRp06rhB9Av0haCyv+DUy0xqh8=
-			</data>
-		</dict>
-		<key>upload_dsym.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Rj0N3HR29nSJpBO/OLH94uO0kdO1wITT4I8CSdvDnwk=
 			</data>
 		</dict>
 	</dict>

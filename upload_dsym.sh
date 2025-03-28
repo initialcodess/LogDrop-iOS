@@ -46,7 +46,9 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-BACKEND_URL=${LOGDROP_BASE_URL:-"https://server.logdrop.io/api/crash/upload/dsym"}
+BASE_URL=${LOGDROP_BASE_URL:-"https://server.logdrop.io/api/"}
+
+BACKEND_URL="${BASE_URL}crash/upload/dsym"
 API_KEY=${LOGDROP_API_KEY:-""}
 
 RESPONSE_BODY=$(mktemp)
