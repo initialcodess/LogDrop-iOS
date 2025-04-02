@@ -54,11 +54,11 @@ API_KEY=${LOGDROP_API_KEY:-""}
 RESPONSE_BODY=$(mktemp)
 echo "LogDrop - debugMessage: Uploading: $ARCHIVE_NAME"
 http_code=$(curl -s -o "$RESPONSE_BODY" -w "%{http_code}" -X POST "$BACKEND_URL" \
+  -H "x-api-key: ${API_KEY}" \
   -F "dsym=@${ARCHIVE_NAME};filename=${ARCHIVE_NAME}" \
   -F "version=${APP_VERSION}" \
   -F "build=${BUILD_NUMBER}" \
-  -F "dsymUuid=${DSYM_UUID}" \
-  -F "apiKey=${API_KEY}")
+  -F "dsymUuid=${DSYM_UUID}")
 
 if [ "$http_code" != "200" ]; then
   echo "LogDrop - debugMessage: dSYM upload failed. HTTP status code: $http_code"
