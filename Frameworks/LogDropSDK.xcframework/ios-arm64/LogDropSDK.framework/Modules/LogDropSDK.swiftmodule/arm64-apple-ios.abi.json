@@ -2225,532 +2225,532 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDropCrashTracker.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDropCrashTracker.swift",
       "kind": "Array",
       "offset": 526,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/LogEntry.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/LogEntry.swift",
       "kind": "StringLiteral",
       "offset": 369,
       "length": 15,
       "value": "\"file_and_line\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/LogEntry.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/LogEntry.swift",
       "kind": "StringLiteral",
       "offset": 716,
       "length": 15,
       "value": "\"file_and_line\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/LogEntry.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/LogEntry.swift",
       "kind": "StringLiteral",
       "offset": 765,
       "length": 11,
       "value": "\"flow_name\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/LogEntry.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/LogEntry.swift",
       "kind": "StringLiteral",
       "offset": 813,
       "length": 24,
       "value": "\"flow_custom_attributes\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/LogEntry.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/LogEntry.swift",
       "kind": "StringLiteral",
       "offset": 860,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/SessionLogs.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/SessionLogs.swift",
       "kind": "StringLiteral",
       "offset": 259,
       "length": 13,
       "value": "\"device_info\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
       "kind": "StringLiteral",
       "offset": 1178,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 1226,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 1279,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
       "kind": "Array",
       "offset": 1350,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 1402,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDropConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 1458,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/utils\/KeychainHelper.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/utils\/KeychainHelper.swift",
       "kind": "StringLiteral",
       "offset": 225,
       "length": 33,
       "value": "\"io.initialcode.aesEncryptionKey\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "BooleanLiteral",
       "offset": 243,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "IntegerLiteral",
       "offset": 285,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "IntegerLiteral",
       "offset": 290,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "IntegerLiteral",
       "offset": 336,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "IntegerLiteral",
       "offset": 341,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 380,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 422,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 467,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "BooleanLiteral",
       "offset": 509,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "Array",
       "offset": 629,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "BooleanLiteral",
       "offset": 664,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "BooleanLiteral",
       "offset": 713,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "BooleanLiteral",
       "offset": 764,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 885,
       "length": 12,
       "value": "\"deviceUuid\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 946,
       "length": 17,
       "value": "\"updatedUserUuid\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 1014,
       "length": 18,
       "value": "\"logFileSizeLimit\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 1083,
       "length": 18,
       "value": "\"localDbSizeLimit\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 1148,
       "length": 15,
       "value": "\"isSdkDisabled\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 1205,
       "length": 11,
       "value": "\"pushToken\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 1263,
       "length": 15,
       "value": "\"pushTokenSent\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 1320,
       "length": 11,
       "value": "\"sessionId\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
       "offset": 2803,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
       "offset": 2830,
       "length": 9,
       "value": "\"WARNING\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
       "offset": 2856,
       "length": 6,
       "value": "\"INFO\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
       "offset": 2880,
       "length": 7,
       "value": "\"DEBUG\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
       "offset": 2905,
       "length": 7,
       "value": "\"CRASH\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
       "offset": 2932,
       "length": 9,
       "value": "\"CONSOLE\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
       "offset": 2960,
       "length": 8,
       "value": "\"HEADER\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDropManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "BooleanLiteral",
       "offset": 318,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDropManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "BooleanLiteral",
       "offset": 4116,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/Constants.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 134,
       "length": 14,
-      "value": "\"1.0.0-beta12\""
+      "value": "\"1.0.0-beta17\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/Constants.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 175,
       "length": 32,
       "value": "\"https:\/\/server.logdrop.io\/api\/\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogFileManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogFileManager.swift",
       "kind": "StringLiteral",
       "offset": 210,
       "length": 21,
       "value": "\"LogFileManagerQueue\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "FloatLiteral",
       "offset": 323,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 380,
       "length": 27,
       "value": "\"com.logdrop.databaseQueue\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 450,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 492,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 659,
       "length": 6,
       "value": "\"Logs\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 689,
       "length": 9,
       "value": "\"Crashes\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 770,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 800,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 833,
       "length": 7,
       "value": "\"level\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 866,
       "length": 11,
       "value": "\"sessionID\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 905,
       "length": 13,
       "value": "\"fileAndLine\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 943,
       "length": 11,
       "value": "\"flow_name\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 991,
       "length": 24,
       "value": "\"flow_custom_attributes\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 1039,
       "length": 9,
       "value": "\"message\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 1071,
       "length": 8,
       "value": "\"flowId\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 1153,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 1180,
       "length": 8,
       "value": "\"object\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 605,
       "length": 13,
       "value": "\"app_version\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 644,
       "length": 11,
       "value": "\"sessionID\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 705,
       "length": 17,
       "value": "\"free_disk_space\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 751,
       "length": 15,
       "value": "\"battery_level\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 795,
       "length": 16,
       "value": "\"low_power_mode\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 836,
       "length": 11,
       "value": "\"device_id\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 879,
       "length": 19,
       "value": "\"sim_operator_name\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 926,
       "length": 14,
       "value": "\"device_model\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 974,
       "length": 21,
       "value": "\"session_create_date\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1021,
       "length": 12,
       "value": "\"os_version\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1066,
       "length": 19,
       "value": "\"network_available\""
     },
     {
-      "filePath": "\/Users\/anilerenergin\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunusdilber\/Desktop\/Projects\/LogDrop\/LogDrop_iOS\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1105,
       "length": 5,
