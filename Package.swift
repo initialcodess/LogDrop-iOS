@@ -8,12 +8,14 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "LogDropSDK", 
-            targets: ["LogDropSDK"])
+            name: "LogDropSDK",
+            targets: ["LogDropSDK"]
+        )
     ],
     targets: [
         .binaryTarget(
-            name: "LogDropSDK", 
-            path: "Frameworks/LogDropSDK.xcframework")
+            name: "LogDropSDK",
+            path: "Frameworks/LogDropSDK.xcframework"
+        )
     ]
 )
