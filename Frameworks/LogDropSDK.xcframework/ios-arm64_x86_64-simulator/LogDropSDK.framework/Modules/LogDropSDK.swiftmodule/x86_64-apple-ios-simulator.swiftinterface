@@ -1,0 +1,62 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name LogDropSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import CoreTelephony
+import CryptoKit
+import Foundation
+@_exported import LogDropSDK
+import SQLite3
+import Swift
+import SystemConfiguration
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct LogFlow : Swift.Codable {
+  public init(name: Swift.String, id: Swift.String, customAttributes: [Swift.String : Swift.String]? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LogDropConfig {
+  public var apiKey: Swift.String
+  public var baseUrl: Swift.String
+  public var isLoggingEnabled: Swift.Bool
+  public var defaultSDKDisabled: Swift.Bool
+  public var sensitiveInfoFilter: [Foundation.NSRegularExpression]
+  public var crashTrackingEnabled: Swift.Bool
+  public var consoleLoggingEnabled: Swift.Bool
+  public class Builder {
+    public init()
+    public func setApiKey(_ apiKey: Swift.String) -> LogDropSDK.LogDropConfig.Builder
+    public func setLoggingEnabled(_ isLoggingEnabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
+    public func setDefaultSDKDisabledValue(_ defaultSDKDisabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
+    public func setSensitiveInfoFilter(sensitiveInfoFilter: [Foundation.NSRegularExpression]) -> LogDropSDK.LogDropConfig.Builder
+    public func setBaseUrl(_ baseUrl: Swift.String) -> LogDropSDK.LogDropConfig.Builder
+    public func setCrashTrackingEnabled(_ crashTrackingEnabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
+    public func setConsoleLoggingEnabled(_ consoleLoggingEnabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
+    public func build() -> LogDropSDK.LogDropConfig
+    @objc deinit
+  }
+}
+@_hasMissingDesignatedInitializers public class LogDrop {
+  public static func initialize(with config: LogDropSDK.LogDropConfig)
+  public static func sendLogs(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
+  public static func onRemoteMessageReceived(_ userInfo: [Swift.AnyHashable : Any])
+  public static func updateUser(userUuid: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
+  public static func onNewApnsToken(apnsToken: Foundation.Data)
+  public static func e(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func d(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func i(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func w(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func c(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ConsoleLogCapture {
+  public static let shared: LogDropSDK.ConsoleLogCapture
+  public func startCapture()
+  @objc deinit
+}
+public struct LogDropError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String?
+}
