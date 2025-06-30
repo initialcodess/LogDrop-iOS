@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'LogDrop'
-  spec.version      = '1.0.0-beta12'
+  spec.version      = '1.0.0-alpha4'
   spec.summary      = 'LogDrop iOS SDK'
   spec.description  = 'Detect Errors Instantly, Resolve Issues Quickly! ✍️
 Monitor Your App in Real-Time, View All Errors on a Single Dashboard!'
