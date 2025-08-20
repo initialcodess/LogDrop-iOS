@@ -28,6 +28,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '13.0'
   spec.swift_version = '5.0'
   spec.vendored_frameworks = 'Frameworks/LogDropSDK.xcframework'
+  spec.resources = ['upload_dsym.sh']
 end
 
 
