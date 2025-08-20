@@ -1390,6 +1390,52 @@
           },
           {
             "kind": "Function",
+            "name": "saveCustomCrashReport",
+            "printedName": "saveCustomCrashReport(threadName:stackTrace:crashType:framework:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FrameworkType",
+                "printedName": "LogDropSDK.FrameworkType",
+                "usr": "s:10LogDropSDK13FrameworkTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10LogDropSDK0aB0C21saveCustomCrashReport10threadName10stackTrace9crashType9frameworkySS_S2SAA09FrameworkM0OtFZ",
+            "mangledName": "$s10LogDropSDK0aB0C21saveCustomCrashReport10threadName10stackTrace9crashType9frameworkySS_S2SAA09FrameworkM0OtFZ",
+            "moduleName": "LogDropSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "e",
             "printedName": "e(_:logFlow:file:line:)",
             "children": [
@@ -1735,6 +1781,271 @@
         "moduleName": "LogDropSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FrameworkType",
+        "printedName": "FrameworkType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "native",
+            "printedName": "native",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LogDropSDK.FrameworkType.Type) -> LogDropSDK.FrameworkType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FrameworkType",
+                    "printedName": "LogDropSDK.FrameworkType",
+                    "usr": "s:10LogDropSDK13FrameworkTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LogDropSDK.FrameworkType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FrameworkType",
+                        "printedName": "LogDropSDK.FrameworkType",
+                        "usr": "s:10LogDropSDK13FrameworkTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10LogDropSDK13FrameworkTypeO6nativeyA2CmF",
+            "mangledName": "$s10LogDropSDK13FrameworkTypeO6nativeyA2CmF",
+            "moduleName": "LogDropSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "reactNative",
+            "printedName": "reactNative",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LogDropSDK.FrameworkType.Type) -> LogDropSDK.FrameworkType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FrameworkType",
+                    "printedName": "LogDropSDK.FrameworkType",
+                    "usr": "s:10LogDropSDK13FrameworkTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LogDropSDK.FrameworkType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FrameworkType",
+                        "printedName": "LogDropSDK.FrameworkType",
+                        "usr": "s:10LogDropSDK13FrameworkTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10LogDropSDK13FrameworkTypeO11reactNativeyA2CmF",
+            "mangledName": "$s10LogDropSDK13FrameworkTypeO11reactNativeyA2CmF",
+            "moduleName": "LogDropSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "flutter",
+            "printedName": "flutter",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LogDropSDK.FrameworkType.Type) -> LogDropSDK.FrameworkType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FrameworkType",
+                    "printedName": "LogDropSDK.FrameworkType",
+                    "usr": "s:10LogDropSDK13FrameworkTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LogDropSDK.FrameworkType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FrameworkType",
+                        "printedName": "LogDropSDK.FrameworkType",
+                        "usr": "s:10LogDropSDK13FrameworkTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10LogDropSDK13FrameworkTypeO7flutteryA2CmF",
+            "mangledName": "$s10LogDropSDK13FrameworkTypeO7flutteryA2CmF",
+            "moduleName": "LogDropSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LogDropSDK.FrameworkType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FrameworkType",
+                    "printedName": "LogDropSDK.FrameworkType",
+                    "usr": "s:10LogDropSDK13FrameworkTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10LogDropSDK13FrameworkTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s10LogDropSDK13FrameworkTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "LogDropSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10LogDropSDK13FrameworkTypeO8rawValueSSvp",
+            "mangledName": "$s10LogDropSDK13FrameworkTypeO8rawValueSSvp",
+            "moduleName": "LogDropSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LogDropSDK13FrameworkTypeO8rawValueSSvg",
+                "mangledName": "$s10LogDropSDK13FrameworkTypeO8rawValueSSvg",
+                "moduleName": "LogDropSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10LogDropSDK13FrameworkTypeO",
+        "mangledName": "$s10LogDropSDK13FrameworkTypeO",
+        "moduleName": "LogDropSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -2239,560 +2550,581 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/LogEntry.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/LogEntry.swift",
       "kind": "StringLiteral",
       "offset": 369,
       "length": 15,
       "value": "\"file_and_line\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/LogEntry.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/LogEntry.swift",
       "kind": "StringLiteral",
       "offset": 716,
       "length": 15,
       "value": "\"file_and_line\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/LogEntry.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/LogEntry.swift",
       "kind": "StringLiteral",
       "offset": 765,
       "length": 11,
       "value": "\"flow_name\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/LogEntry.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/LogEntry.swift",
       "kind": "StringLiteral",
       "offset": 813,
       "length": 24,
       "value": "\"flow_custom_attributes\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/LogEntry.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/LogEntry.swift",
       "kind": "StringLiteral",
       "offset": 860,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/SessionLogs.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/SessionLogs.swift",
       "kind": "StringLiteral",
       "offset": 259,
       "length": 13,
       "value": "\"device_info\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDropConfig.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDropConfig.swift",
       "kind": "StringLiteral",
       "offset": 1178,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDropConfig.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDropConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 1226,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDropConfig.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDropConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 1279,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDropConfig.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDropConfig.swift",
       "kind": "Array",
       "offset": 1350,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDropConfig.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDropConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 1402,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDropConfig.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDropConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 1458,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/utils\/KeychainHelper.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/utils\/KeychainHelper.swift",
       "kind": "StringLiteral",
       "offset": 225,
       "length": 33,
       "value": "\"io.initialcode.aesEncryptionKey\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2801,
+      "offset": 3082,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2828,
+      "offset": 3109,
       "length": 9,
       "value": "\"WARNING\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2854,
+      "offset": 3135,
       "length": 6,
       "value": "\"INFO\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2878,
+      "offset": 3159,
       "length": 7,
       "value": "\"DEBUG\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2903,
+      "offset": 3184,
       "length": 7,
       "value": "\"CRASH\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2930,
+      "offset": 3211,
       "length": 9,
       "value": "\"CONSOLE\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2958,
+      "offset": 3239,
       "length": 8,
       "value": "\"HEADER\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/LogDrop.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 2989,
+      "offset": 3270,
       "length": 12,
       "value": "\"DEVICEINFO\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/FrameworkType.swift",
+      "kind": "StringLiteral",
+      "offset": 155,
+      "length": 8,
+      "value": "\"NATIVE\""
+    },
+    {
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/FrameworkType.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
+      "length": 14,
+      "value": "\"REACT_NATIVE\""
+    },
+    {
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/FrameworkType.swift",
+      "kind": "StringLiteral",
+      "offset": 221,
+      "length": 9,
+      "value": "\"FLUTTER\""
+    },
+    {
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 191,
       "length": 13,
-      "value": "\"1.0.1-beta1\""
+      "value": "\"1.0.1-beta2\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 231,
       "length": 32,
       "value": "\"https:\/\/server.logdrop.io\/api\/\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDropCrashTracker.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDropCrashTracker.swift",
       "kind": "Array",
       "offset": 544,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogFileManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogFileManager.swift",
       "kind": "StringLiteral",
       "offset": 210,
       "length": 21,
       "value": "\"LogFileManagerQueue\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDropManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "StringLiteral",
       "offset": 385,
       "length": 30,
       "value": "\"com.logdrop.deviceinfo.timer\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDropManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "BooleanLiteral",
       "offset": 490,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDropManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6931,
+      "offset": 7467,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "BooleanLiteral",
       "offset": 226,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "IntegerLiteral",
       "offset": 268,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "IntegerLiteral",
       "offset": 273,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "IntegerLiteral",
       "offset": 317,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "IntegerLiteral",
       "offset": 322,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 362,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 408,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "BooleanLiteral",
       "offset": 451,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "Array",
       "offset": 573,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "BooleanLiteral",
       "offset": 620,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "BooleanLiteral",
       "offset": 672,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 777,
       "length": 12,
       "value": "\"deviceUuid\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 830,
       "length": 17,
       "value": "\"updatedUserUuid\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 890,
       "length": 18,
       "value": "\"logFileSizeLimit\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 951,
       "length": 18,
       "value": "\"localDbSizeLimit\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 1008,
       "length": 15,
       "value": "\"isSdkDisabled\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 1057,
       "length": 11,
       "value": "\"pushToken\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 1107,
       "length": 15,
       "value": "\"pushTokenSent\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 1156,
       "length": 11,
       "value": "\"sessionId\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 1209,
       "length": 18,
       "value": "\"totalSessionTime\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 1271,
       "length": 20,
       "value": "\"lastForegroundTime\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/StateManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/StateManager.swift",
       "kind": "StringLiteral",
       "offset": 1335,
       "length": 19,
       "value": "\"isAppOnBackground\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "FloatLiteral",
       "offset": 323,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 380,
       "length": 27,
       "value": "\"com.logdrop.databaseQueue\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 450,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 492,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 659,
       "length": 6,
       "value": "\"Logs\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 689,
       "length": 9,
       "value": "\"Crashes\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 770,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 800,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 833,
       "length": 7,
       "value": "\"level\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 866,
       "length": 11,
       "value": "\"sessionID\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 905,
       "length": 13,
       "value": "\"fileAndLine\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 943,
       "length": 11,
       "value": "\"flow_name\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 991,
       "length": 24,
       "value": "\"flow_custom_attributes\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 1039,
       "length": 9,
       "value": "\"message\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 1071,
       "length": 8,
       "value": "\"flowId\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 1153,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDatabaseManager.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
       "offset": 1180,
       "length": 8,
       "value": "\"object\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 616,
       "length": 13,
       "value": "\"app_version\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 655,
       "length": 11,
       "value": "\"sessionID\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 716,
       "length": 17,
       "value": "\"free_disk_space\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 762,
       "length": 15,
       "value": "\"battery_level\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 806,
       "length": 16,
       "value": "\"low_power_mode\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 847,
       "length": 11,
       "value": "\"device_id\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 890,
       "length": 19,
       "value": "\"sim_operator_name\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 937,
       "length": 14,
       "value": "\"device_model\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 985,
       "length": 21,
       "value": "\"session_create_date\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1032,
       "length": 12,
       "value": "\"os_version\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1077,
       "length": 19,
       "value": "\"network_available\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1116,
       "length": 5,
       "value": "\"gmt\""
     },
     {
-      "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/model\/DeviceInfo.swift",
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/model\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1165,
       "length": 2,
