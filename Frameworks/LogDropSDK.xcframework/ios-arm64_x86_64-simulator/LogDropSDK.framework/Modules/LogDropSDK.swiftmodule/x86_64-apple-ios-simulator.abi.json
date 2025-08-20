@@ -2722,7 +2722,7 @@
       "kind": "StringLiteral",
       "offset": 191,
       "length": 13,
-      "value": "\"1.0.1-beta2\""
+      "value": "\"1.0.1-beta3\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/Constants.swift",
