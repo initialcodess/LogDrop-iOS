@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name LogDropSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name LogDropSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CoreTelephony
 import CryptoKit
 import Foundation
 @_exported import LogDropSDK
+import MachO
 import SQLite3
 import Swift
 import SystemConfiguration
@@ -26,6 +27,7 @@ public struct LogDropConfig {
   public var sensitiveInfoFilter: [Foundation.NSRegularExpression]
   public var crashTrackingEnabled: Swift.Bool
   public var consoleLoggingEnabled: Swift.Bool
+  public var frameworkType: LogDropSDK.FrameworkType
   public class Builder {
     public init()
     public func setApiKey(_ apiKey: Swift.String) -> LogDropSDK.LogDropConfig.Builder
@@ -35,6 +37,7 @@ public struct LogDropConfig {
     public func setBaseUrl(_ baseUrl: Swift.String) -> LogDropSDK.LogDropConfig.Builder
     public func setCrashTrackingEnabled(_ crashTrackingEnabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
     public func setConsoleLoggingEnabled(_ consoleLoggingEnabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
+    public func setFrameworkType(_ frameworkType: LogDropSDK.FrameworkType) -> LogDropSDK.LogDropConfig.Builder
     public func build() -> LogDropSDK.LogDropConfig
     @objc deinit
   }
@@ -45,7 +48,7 @@ public struct LogDropConfig {
   public static func onRemoteMessageReceived(_ userInfo: [Swift.AnyHashable : Any])
   public static func updateUser(userUuid: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
   public static func onNewApnsToken(apnsToken: Foundation.Data)
-  public static func saveCustomCrashReport(threadName: Swift.String, stackTrace: Swift.String, crashType: Swift.String, framework: LogDropSDK.FrameworkType)
+  public static func saveCustomCrashReport(threadName: Swift.String, stackTrace: Swift.String, crashType: Swift.String)
   public static func e(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
   public static func d(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
   public static func i(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
