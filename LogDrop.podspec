@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'LogDrop'
-  spec.version      = '1.0.1'
+  spec.version      = '1.0.2'
   spec.summary      = 'Lightweight real-time log and crash tracking SDK for iOS.'
   spec.description  = <<-DESC
     LogDrop helps developers monitor app behavior and crashes in real-time through a visual dashboard.
