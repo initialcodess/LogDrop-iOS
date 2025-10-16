@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/LogDropSDK-Swift.h</key>
 		<data>
-		ifvJRYLvwhpewUdGe3WT8NkjdnU=
+		xsGvm9p225abLCpJVOkptOE4UK0=
 		</data>
 		<key>Headers/LogDropSDK.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2hWjtYr6TSnKPkNQ28jTC7wIJzE=
+		l5lHuEWj0x4cm2YPJTsnUlU6V8w=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		6Yhb6Y+OV3XuUzb4aiW2vY2Zs+Q=
+		x8Rm6yHoxzClwqxhAr8Yjvsztz4=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		mZnrcP8ES/FkVx1ZBa6zyw68WT4=
+		T91K3YJaYYn8xycIlKXlPEMvDLE=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Vm1RgkjTMIXmRErdb7Q9TlQsG8A=
+		qPQNL6B3ki94mpf4iMoQQFhk32o=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mZnrcP8ES/FkVx1ZBa6zyw68WT4=
+		T91K3YJaYYn8xycIlKXlPEMvDLE=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Athr4R1rit/2+JM7QSNbWTpj/yw=
+		jNVEKmx0EXh4MjrYOYdeHnL245c=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		6Yhb6Y+OV3XuUzb4aiW2vY2Zs+Q=
+		x8Rm6yHoxzClwqxhAr8Yjvsztz4=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qqvbnV8fm5t3vad08QeQYyGFuSU=
+		YlAT3Q6FVITdMUSYUt8Sf1/mlvk=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		15y3l29QU9hYbfM9Pun8EBfmG4w=
+		ufELRPIF6kK34etnOneM+d1+hD8=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qqvbnV8fm5t3vad08QeQYyGFuSU=
+		YlAT3Q6FVITdMUSYUt8Sf1/mlvk=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DAHovwNPDTdkNgRr0uJf1P0SjPM=
+		55ioH89YVu3cMrzJP5/O5Eub1iw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EAQ0uD/mmuauL3RefajYlp+7Ks+RKZ1cvosS8eZKdlw=
+			oRdBHq2fKmP4nFqzIMR0Y8RBHsGngkdvKzx93R8bwrg=
 			</data>
 		</dict>
 		<key>Headers/LogDropSDK.h</key>
@@ -81,70 +81,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g4MqtPKwWu9s6iKr2cTUmlntFEEHuvLs+w+qLpMchnA=
+			3o8U+xzq0WNpDUk3tj1nKJ/ZI3J6KRMWsHn5aYJJaic=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iyB26Zg+T66wvEd4ygrPgFJ6PTW0uRCWp0k1wsTVSP0=
+			YBNsjv4A9XTFju8vTJ4Lou3aTcuISa64hbKShe24Hus=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eu+0mLHkKIvUQdhWEdznKxH6tUvGUqksuGgLiCGG9Hw=
+			1G549tnab1lPNMPiYGZ6s834iGcpg4bgO/hpTdcB9oQ=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iyB26Zg+T66wvEd4ygrPgFJ6PTW0uRCWp0k1wsTVSP0=
+			YBNsjv4A9XTFju8vTJ4Lou3aTcuISa64hbKShe24Hus=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AHG2ePbky+TvwlvjaoreUiaJzLIaTIk/MU9RAjECs3w=
+			HbSVIq2w7cJtnvPGN2BZ/fA7CxBEaJFjUNraFPefGM4=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g4MqtPKwWu9s6iKr2cTUmlntFEEHuvLs+w+qLpMchnA=
+			3o8U+xzq0WNpDUk3tj1nKJ/ZI3J6KRMWsHn5aYJJaic=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3p3B0DlmGQ43QK6DNRaorlDQxsYltLEsk6FFeQsLnw8=
+			Sml+Wa5oKtw3frAsLXXAoGqurLvRiLXihfVEIdeNIJQ=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+TcJuQ1WEQERhQ935+LX+A9JM5cc5ljj2jw9FVPWWXw=
+			WOp7iVhJV4XV3z+S1hL0e3bV57TY1HmMTeFtol+wECo=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3p3B0DlmGQ43QK6DNRaorlDQxsYltLEsk6FFeQsLnw8=
+			Sml+Wa5oKtw3frAsLXXAoGqurLvRiLXihfVEIdeNIJQ=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QPejLSLqu4a5nr+0rgAMCILfI/4oW3TsTm1cNTWO7iw=
+			EnVkf8yRc3Wkk4Ku3Tw6wZu5rjhi9P25tLOdItplNzc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name LogDropSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CoreTelephony
 import CryptoKit
 import Foundation
@@ -15,7 +15,9 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public struct LogFlow : Swift.Codable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(name: Swift.String, id: Swift.String, customAttributes: [Swift.String : Swift.String]? = nil)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -26,7 +28,6 @@ public struct LogDropConfig {
   public var defaultSDKDisabled: Swift.Bool
   public var sensitiveInfoFilter: [Foundation.NSRegularExpression]
   public var crashTrackingEnabled: Swift.Bool
-  public var consoleLoggingEnabled: Swift.Bool
   public var frameworkType: LogDropSDK.FrameworkType
   public var isHttpLoggingEnabled: Swift.Bool
   public class Builder {
@@ -37,7 +38,6 @@ public struct LogDropConfig {
     public func setSensitiveInfoFilter(sensitiveInfoFilter: [Foundation.NSRegularExpression]) -> LogDropSDK.LogDropConfig.Builder
     public func setBaseUrl(_ baseUrl: Swift.String) -> LogDropSDK.LogDropConfig.Builder
     public func setCrashTrackingEnabled(_ crashTrackingEnabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
-    public func setConsoleLoggingEnabled(_ consoleLoggingEnabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
     public func setFrameworkType(_ frameworkType: LogDropSDK.FrameworkType) -> LogDropSDK.LogDropConfig.Builder
     public func setIsHttpLoggingEnabled(_ isHttpLoggingEnabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
     public func build() -> LogDropSDK.LogDropConfig
@@ -49,32 +49,40 @@ extension Foundation.URLSession {
 }
 @_hasMissingDesignatedInitializers public class LogDrop {
   public static func initialize(with config: LogDropSDK.LogDropConfig)
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func sendLogs(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
+  #endif
   public static func onRemoteMessageReceived(_ userInfo: [Swift.AnyHashable : Any])
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func updateUser(userUuid: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
+  #endif
   public static func onNewApnsToken(apnsToken: Foundation.Data)
   public static func saveCustomCrashReport(threadName: Swift.String, stackTrace: Swift.String, crashType: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func e(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func d(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func i(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func w(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
-  public static func c(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
+  #endif
   @objc deinit
 }
 public enum FrameworkType : Swift.String, Swift.Codable {
   case native
   case reactNative
   case flutter
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
-}
-@_hasMissingDesignatedInitializers public class ConsoleLogCapture {
-  public static let shared: LogDropSDK.ConsoleLogCapture
-  public func startCapture()
-  @objc deinit
 }
 public struct LogDropError : Foundation.LocalizedError {
   public var errorDescription: Swift.String?
