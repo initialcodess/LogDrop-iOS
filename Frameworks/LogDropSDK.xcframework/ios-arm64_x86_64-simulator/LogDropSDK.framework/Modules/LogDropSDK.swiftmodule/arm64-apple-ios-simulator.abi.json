@@ -2843,13 +2843,6 @@
       "value": "\"io.initialcode.aesEncryptionKey\""
     },
     {
-      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/utils\/URLSession_Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 441,
-      "length": 55,
-      "value": "\"logdrop_initWithConfiguration:delegate:delegateQueue:\""
-    },
-    {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
       "offset": 3675,
@@ -2930,13 +2923,13 @@
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 191,
-      "length": 7,
-      "value": "\"1.0.4\""
+      "length": 14,
+      "value": "\"1.0.5-alpha1\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 225,
+      "offset": 232,
       "length": 32,
       "value": "\"https:\/\/server.logdrop.io\/api\/\""
     },
@@ -2971,7 +2964,7 @@
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7690,
+      "offset": 7801,
       "length": 5,
       "value": "false"
     },
