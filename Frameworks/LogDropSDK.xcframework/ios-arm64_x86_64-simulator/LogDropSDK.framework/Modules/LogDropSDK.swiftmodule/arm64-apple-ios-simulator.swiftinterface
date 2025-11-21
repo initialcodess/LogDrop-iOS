@@ -84,6 +84,9 @@ public enum FrameworkType : Swift.String, Swift.Codable {
     get
   }
 }
+extension Foundation.URLSessionConfiguration {
+  @objc dynamic public class func enableConfigurationSwizzle()
+}
 public struct LogDropError : Foundation.LocalizedError {
   public var errorDescription: Swift.String?
 }
