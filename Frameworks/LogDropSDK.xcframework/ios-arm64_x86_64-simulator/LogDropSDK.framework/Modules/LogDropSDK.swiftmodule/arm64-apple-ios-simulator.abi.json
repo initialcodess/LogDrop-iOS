@@ -3090,7 +3090,7 @@
       "kind": "StringLiteral",
       "offset": 191,
       "length": 14,
-      "value": "\"1.0.5-alpha2\""
+      "value": "\"1.0.5-alpha3\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/Constants.swift",
@@ -3122,15 +3122,29 @@
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDropManager.swift",
+      "kind": "StringLiteral",
+      "offset": 528,
+      "length": 27,
+      "value": "\"com.logdrop.sendLog.queue\""
+    },
+    {
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 490,
+      "offset": 615,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDropManager.swift",
+      "kind": "StringLiteral",
+      "offset": 748,
+      "length": 30,
+      "value": "\"com.logdrop.deviceinfo.state\""
+    },
+    {
+      "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7834,
+      "offset": 8112,
       "length": 5,
       "value": "false"
     },
@@ -3347,91 +3361,91 @@
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 659,
+      "offset": 783,
       "length": 6,
       "value": "\"Logs\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 689,
+      "offset": 813,
       "length": 9,
       "value": "\"Crashes\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 770,
+      "offset": 894,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 800,
+      "offset": 924,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 833,
+      "offset": 957,
       "length": 7,
       "value": "\"level\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 866,
+      "offset": 990,
       "length": 11,
       "value": "\"sessionID\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 905,
+      "offset": 1029,
       "length": 13,
       "value": "\"fileAndLine\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 943,
+      "offset": 1067,
       "length": 11,
       "value": "\"flow_name\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 991,
+      "offset": 1115,
       "length": 24,
       "value": "\"flow_custom_attributes\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 1039,
+      "offset": 1163,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 1071,
+      "offset": 1195,
       "length": 8,
       "value": "\"flowId\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 1153,
+      "offset": 1277,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/yunus\/Projects\/Logdrop\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/LogDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 1180,
+      "offset": 1304,
       "length": 8,
       "value": "\"object\""
     },
