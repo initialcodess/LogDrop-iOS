@@ -26,20 +26,14 @@ public struct LogDropConfig {
   public var baseUrl: Swift.String
   public var isLoggingEnabled: Swift.Bool
   public var defaultSDKDisabled: Swift.Bool
-  public var sensitiveInfoFilter: [Foundation.NSRegularExpression]
-  public var crashTrackingEnabled: Swift.Bool
   public var frameworkType: LogDropSDK.FrameworkType
-  public var isHttpLoggingEnabled: Swift.Bool
   public class Builder {
     public init()
     public func setApiKey(_ apiKey: Swift.String) -> LogDropSDK.LogDropConfig.Builder
     public func setLoggingEnabled(_ isLoggingEnabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
     public func setDefaultSDKDisabledValue(_ defaultSDKDisabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
-    public func setSensitiveInfoFilter(sensitiveInfoFilter: [Foundation.NSRegularExpression]) -> LogDropSDK.LogDropConfig.Builder
     public func setBaseUrl(_ baseUrl: Swift.String) -> LogDropSDK.LogDropConfig.Builder
-    public func setCrashTrackingEnabled(_ crashTrackingEnabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
     public func setFrameworkType(_ frameworkType: LogDropSDK.FrameworkType) -> LogDropSDK.LogDropConfig.Builder
-    public func setIsHttpLoggingEnabled(_ isHttpLoggingEnabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
     public func build() -> LogDropSDK.LogDropConfig
     @objc deinit
   }
@@ -71,6 +65,12 @@ extension Foundation.URLSession {
   public static func w(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
   #endif
   @objc deinit
+}
+public struct AnyCodable : Swift.Codable {
+  public let value: Any
+  public init(_ value: Any)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public enum FrameworkType : Swift.String, Swift.Codable {
   case native
