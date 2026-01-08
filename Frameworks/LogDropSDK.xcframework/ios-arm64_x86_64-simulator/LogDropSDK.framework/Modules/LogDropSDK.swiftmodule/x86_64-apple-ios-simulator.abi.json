@@ -2891,13 +2891,13 @@
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 191,
-      "length": 14,
-      "value": "\"1.0.7-alpha2\""
+      "length": 7,
+      "value": "\"1.0.7\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 232,
+      "offset": 225,
       "length": 32,
       "value": "\"https:\/\/server.logdrop.io\/api\/\""
     },
