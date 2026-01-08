@@ -51,6 +51,7 @@ extension Foundation.URLSession {
   public static func updateUser(userUuid: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
   #endif
   public static func onNewApnsToken(apnsToken: Foundation.Data)
+  public static func saveHttpLog(jsonString: Swift.String)
   public static func saveCustomCrashReport(threadName: Swift.String, stackTrace: Swift.String, crashType: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
   public static func e(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
