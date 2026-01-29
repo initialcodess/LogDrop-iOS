@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/H3npJ/6/Qv11a7/Y1rLIT0/FL0=
+		2KBuJcffgh9aBrsuNKmn9B1zc2g=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		9kaeFbwe0il/psX8lWyE/XBM/OI=
+		xfZRJxLBoT8gMyAx3Zl4vrMOcVI=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		s8Lbd5sPS7aOGKq8tD1XTVp84q0=
+		WJtN21Mr01y7732NZenWb8oZmhQ=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9kaeFbwe0il/psX8lWyE/XBM/OI=
+		xfZRJxLBoT8gMyAx3Zl4vrMOcVI=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fOEBH1roGdvKZ6ov6Fmc/riwTM0=
+		4+mb9Lfn3nN2UcRHf2FgYB9hHmA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hvD8hS1i0IM5//LgYstydAtCL0A0FDn5l7XhKTGciqY=
+			1A+F+rFezUPBiG1yQjoNJqRsf22UwNeBgwKOzufX0IA=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tUKJAu9fezwxtHfoFEuhDVcUUX9mqZ0gT0DzZwEZGXM=
+			APK2CCOMXxIsg/d+sys5XpyogVH/llr181ysh/oymnw=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hvD8hS1i0IM5//LgYstydAtCL0A0FDn5l7XhKTGciqY=
+			1A+F+rFezUPBiG1yQjoNJqRsf22UwNeBgwKOzufX0IA=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IduToGyXfzthXjHh7RzoC4FTa1M8sBcSr3IT9j92PF4=
+			KPg2Q4BCuMtftydg+uZdTQT04dkkWLbDRGvJT/GXRC0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
