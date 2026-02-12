@@ -2843,20 +2843,20 @@
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 191,
-      "length": 7,
-      "value": "\"1.0.9\""
+      "length": 15,
+      "value": "\"1.1.10-alpha1\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 225,
+      "offset": 233,
       "length": 32,
       "value": "\"https:\/\/server.logdrop.io\/api\/\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDropCrashTracker.swift",
       "kind": "Array",
-      "offset": 557,
+      "offset": 1012,
       "length": 2,
       "value": "[]"
     },
