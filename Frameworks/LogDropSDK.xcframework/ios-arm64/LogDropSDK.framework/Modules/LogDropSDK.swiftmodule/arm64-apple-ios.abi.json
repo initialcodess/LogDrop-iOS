@@ -3307,7 +3307,7 @@
       "kind": "StringLiteral",
       "offset": 135,
       "length": 14,
-      "value": "\"2.0.2-alpha1\""
+      "value": "\"2.0.2-alpha2\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
@@ -3466,14 +3466,14 @@
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 15985,
+      "offset": 16019,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 23374,
+      "offset": 23408,
       "length": 5,
       "value": "false"
     },
