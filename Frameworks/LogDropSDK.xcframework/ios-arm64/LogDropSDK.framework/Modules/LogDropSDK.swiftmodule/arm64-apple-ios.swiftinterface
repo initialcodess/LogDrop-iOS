@@ -2,20 +2,28 @@
 // swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name LogDropSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import AVFoundation
+import Contacts
+import CoreLocation
 import CoreTelephony
 import CryptoKit
+import EventKit
 import Foundation
 @_exported import LogDropSDK
 import MachO
+import ObjectiveC
+import Photos
 import SQLite3
 import Security
 import Swift
 import SwiftProtobuf
 import SystemConfiguration
 import UIKit
+import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import ObjectiveC.runtime
 public struct LogFlow : Swift.Codable {
   #if compiler(>=5.3) && $NonescapableTypes
   public init(name: Swift.String, id: Swift.String, customAttributes: [Swift.String : Swift.String]? = nil)
