@@ -53,7 +53,6 @@ extension Foundation.URLSession {
   public static func enableSessionInitSwizzle()
 }
 @_hasMissingDesignatedInitializers public class LogDrop {
-  public static func initialize(with builder: LogDropSDK.LogDropConfig.Builder = LogDropConfig.Builder())
   public static func initialize(with config: LogDropSDK.LogDropConfig)
   #if compiler(>=5.3) && $NonescapableTypes
   public static func sendLogs(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })

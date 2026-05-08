@@ -1051,36 +1051,6 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Builder",
-                "printedName": "LogDropSDK.LogDropConfig.Builder",
-                "hasDefaultArg": true,
-                "usr": "s:10LogDropSDK0aB6ConfigV7BuilderC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10LogDropSDK0aB0C10initialize4withyAA0aB6ConfigV7BuilderC_tFZ",
-            "mangledName": "$s10LogDropSDK0aB0C10initialize4withyAA0aB6ConfigV7BuilderC_tFZ",
-            "moduleName": "LogDropSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "initialize",
-            "printedName": "initialize(with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "LogDropConfig",
                 "printedName": "LogDropSDK.LogDropConfig",
                 "usr": "s:10LogDropSDK0aB6ConfigV"
@@ -3482,63 +3452,63 @@
     {
       "filePath": "\/Users\/fcetinkaya\/projects\/initial\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 5675,
+      "offset": 4414,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
       "filePath": "\/Users\/fcetinkaya\/projects\/initial\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 5702,
+      "offset": 4441,
       "length": 9,
       "value": "\"WARNING\""
     },
     {
       "filePath": "\/Users\/fcetinkaya\/projects\/initial\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 5728,
+      "offset": 4467,
       "length": 6,
       "value": "\"INFO\""
     },
     {
       "filePath": "\/Users\/fcetinkaya\/projects\/initial\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 5752,
+      "offset": 4491,
       "length": 7,
       "value": "\"DEBUG\""
     },
     {
       "filePath": "\/Users\/fcetinkaya\/projects\/initial\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 5777,
+      "offset": 4516,
       "length": 7,
       "value": "\"CRASH\""
     },
     {
       "filePath": "\/Users\/fcetinkaya\/projects\/initial\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 5802,
+      "offset": 4541,
       "length": 7,
       "value": "\"EVENT\""
     },
     {
       "filePath": "\/Users\/fcetinkaya\/projects\/initial\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 5828,
+      "offset": 4567,
       "length": 8,
       "value": "\"HEADER\""
     },
     {
       "filePath": "\/Users\/fcetinkaya\/projects\/initial\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 5859,
+      "offset": 4598,
       "length": 12,
       "value": "\"DEVICEINFO\""
     },
     {
       "filePath": "\/Users\/fcetinkaya\/projects\/initial\/LogDrop_iOS_SDK\/LogDropSDK\/LogDrop.swift",
       "kind": "StringLiteral",
-      "offset": 5899,
+      "offset": 4638,
       "length": 18,
       "value": "\"NETWORK_ACTIVITY\""
     },
@@ -3617,7 +3587,7 @@
       "kind": "StringLiteral",
       "offset": 135,
       "length": 14,
-      "value": "\"2.0.5-alpha1\""
+      "value": "\"2.0.5-alpha2\""
     },
     {
       "filePath": "\/Users\/fcetinkaya\/projects\/initial\/LogDrop_iOS_SDK\/LogDropSDK\/internal\/Constants.swift",
