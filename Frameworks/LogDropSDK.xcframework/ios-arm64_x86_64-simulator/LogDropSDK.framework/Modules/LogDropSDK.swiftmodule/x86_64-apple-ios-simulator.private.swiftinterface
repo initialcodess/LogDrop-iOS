@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name LogDropSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AVFoundation
 import Contacts
 import CoreLocation
@@ -14,6 +14,7 @@ import MachO
 import ObjectiveC
 import Photos
 import SQLite3
+import SafariServices
 import Security
 import Swift
 import SystemConfiguration
@@ -37,6 +38,11 @@ public struct LogDropConfig {
   public var isLoggingEnabled: Swift.Bool
   public var defaultSDKDisabled: Swift.Bool
   public var frameworkType: LogDropSDK.FrameworkType
+  public var pushCallbacks: (any LogDropSDK.LogDropPushCallbacks)?
+  public var pushDeeplinkHandler: (any LogDropSDK.LogDropPushDeeplinkHandler)?
+  public var inAppLifecycleCallbacks: (any LogDropSDK.LogDropInAppLifecycleCallbacks)?
+  public var internalBrowserLifecycleCallbacks: (any LogDropSDK.LogDropInternalBrowserLifecycleCallbacks)?
+  public var pushAppGroupSuiteName: Swift.String?
   public class Builder {
     public init()
     public func setApiKey(_ apiKey: Swift.String) -> LogDropSDK.LogDropConfig.Builder
@@ -45,6 +51,21 @@ public struct LogDropConfig {
     public func setDefaultSDKDisabledValue(_ defaultSDKDisabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
     public func setBaseUrl(_ baseUrl: Swift.String) -> LogDropSDK.LogDropConfig.Builder
     public func setFrameworkType(_ frameworkType: LogDropSDK.FrameworkType) -> LogDropSDK.LogDropConfig.Builder
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func setPushCallbacks(_ callbacks: (any LogDropSDK.LogDropPushCallbacks)?) -> LogDropSDK.LogDropConfig.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func setPushDeeplinkHandler(_ handler: (any LogDropSDK.LogDropPushDeeplinkHandler)?) -> LogDropSDK.LogDropConfig.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func setInAppLifecycleCallbacks(_ callbacks: (any LogDropSDK.LogDropInAppLifecycleCallbacks)?) -> LogDropSDK.LogDropConfig.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func setInternalBrowserLifecycleCallbacks(_ callbacks: (any LogDropSDK.LogDropInternalBrowserLifecycleCallbacks)?) -> LogDropSDK.LogDropConfig.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func setPushAppGroupSuiteName(_ suiteName: Swift.String?) -> LogDropSDK.LogDropConfig.Builder
+    #endif
     public func build() -> LogDropSDK.LogDropConfig
     @objc deinit
   }
@@ -58,6 +79,22 @@ extension Foundation.URLSession {
   public static func sendLogs(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
   #endif
   public static func onRemoteMessageReceived(_ userInfo: [Swift.AnyHashable : Any])
+  public static func isLogDropPush(_ userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
+  public static func requestPushNotificationAuthorization()
+  @discardableResult
+  public static func showPendingPushPopup() -> LogDropSDK.LogDropPopupShowResult
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func setPushCallbacks(_ callbacks: (any LogDropSDK.LogDropPushCallbacks)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func setPushDeeplinkHandler(_ handler: (any LogDropSDK.LogDropPushDeeplinkHandler)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func setInAppLifecycleCallbacks(_ callbacks: (any LogDropSDK.LogDropInAppLifecycleCallbacks)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func setInternalBrowserLifecycleCallbacks(_ callbacks: (any LogDropSDK.LogDropInternalBrowserLifecycleCallbacks)?)
+  #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public static func updateUser(userUuid: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
   #endif
@@ -84,6 +121,142 @@ public struct AnyCodable : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
+public struct LogDropPushClick : Swift.Codable, Swift.Equatable, Swift.Sendable {
+  public let doNothing: Swift.Bool
+  public init(doNothing: Swift.Bool = false)
+  public static func == (a: LogDropSDK.LogDropPushClick, b: LogDropSDK.LogDropPushClick) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum LogDropDeeplinkMode : Swift.String, Swift.Codable, Swift.Equatable, Swift.Sendable {
+  case inline
+  case internalBrowser
+  case externalBrowser
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct LogDropPushAction : Swift.Codable, Swift.Equatable, Swift.Sendable {
+  public let kind: Swift.String?
+  public let deeplinkMode: LogDropSDK.LogDropDeeplinkMode?
+  public let target: Swift.String?
+  public let fallbackTarget: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(kind: Swift.String? = nil, deeplinkMode: LogDropSDK.LogDropDeeplinkMode? = nil, target: Swift.String? = nil, fallbackTarget: Swift.String? = nil)
+  #endif
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (a: LogDropSDK.LogDropPushAction, b: LogDropSDK.LogDropPushAction) -> Swift.Bool
+}
+public struct LogDropInAppButton : Swift.Codable, Swift.Equatable, Swift.Sendable {
+  public let label: Swift.String?
+  public let action: LogDropSDK.LogDropPushAction?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(label: Swift.String? = nil, action: LogDropSDK.LogDropPushAction? = nil)
+  #endif
+  public static func == (a: LogDropSDK.LogDropInAppButton, b: LogDropSDK.LogDropInAppButton) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LogDropInAppMessage : Swift.Codable, Swift.Equatable, Swift.Sendable {
+  public let template: Swift.String?
+  public let position: Swift.String?
+  public let headline: Swift.String?
+  public let body: Swift.String?
+  public let imageUrl: Swift.String?
+  public let primaryButton: LogDropSDK.LogDropInAppButton?
+  public let secondaryButton: LogDropSDK.LogDropInAppButton?
+  public let dismissible: Swift.Bool?
+  public let isFullHeight: Swift.Bool?
+  public let ttlSeconds: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(template: Swift.String? = nil, position: Swift.String? = nil, headline: Swift.String? = nil, body: Swift.String? = nil, imageUrl: Swift.String? = nil, primaryButton: LogDropSDK.LogDropInAppButton? = nil, secondaryButton: LogDropSDK.LogDropInAppButton? = nil, dismissible: Swift.Bool? = nil, isFullHeight: Swift.Bool? = nil, ttlSeconds: Swift.Int? = nil)
+  #endif
+  public static func == (a: LogDropSDK.LogDropInAppMessage, b: LogDropSDK.LogDropInAppMessage) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LogDropPushAnalyticsEvent : Swift.Codable, Swift.Equatable {
+  public let eventCode: Swift.String
+  public let eventName: Swift.String
+  public let properties: [Swift.String : LogDropSDK.LogDropJSONValue]
+  public init(eventCode: Swift.String, eventName: Swift.String, properties: [Swift.String : LogDropSDK.LogDropJSONValue] = [:])
+  public static func == (a: LogDropSDK.LogDropPushAnalyticsEvent, b: LogDropSDK.LogDropPushAnalyticsEvent) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LogDropJSONValue : Swift.Codable, Swift.Equatable {
+  public let value: Any
+  public init(_ value: Any)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: LogDropSDK.LogDropJSONValue, rhs: LogDropSDK.LogDropJSONValue) -> Swift.Bool
+}
+public struct LogDropPushPayload {
+  public let notificationId: Swift.String?
+  public let style: Swift.Int?
+  public let type: Swift.Int?
+  public let schemaVersion: Swift.Int?
+  public let messageKind: Swift.String?
+  public let title: Swift.String?
+  public let message: Swift.String?
+  public let rawExtras: [Swift.String : LogDropSDK.LogDropJSONValue]?
+  public let click: LogDropSDK.LogDropPushClick?
+  public let receiveEvent: LogDropSDK.LogDropPushAnalyticsEvent?
+  public let clickEvent: LogDropSDK.LogDropPushAnalyticsEvent?
+  public let action: LogDropSDK.LogDropPushAction?
+  public let inApp: LogDropSDK.LogDropInAppMessage?
+  public let userInfo: [Swift.AnyHashable : Any]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(notificationId: Swift.String? = nil, style: Swift.Int? = nil, type: Swift.Int? = nil, schemaVersion: Swift.Int? = nil, messageKind: Swift.String? = nil, title: Swift.String? = nil, message: Swift.String? = nil, rawExtras: [Swift.String : LogDropSDK.LogDropJSONValue]? = nil, click: LogDropSDK.LogDropPushClick? = nil, receiveEvent: LogDropSDK.LogDropPushAnalyticsEvent? = nil, clickEvent: LogDropSDK.LogDropPushAnalyticsEvent? = nil, action: LogDropSDK.LogDropPushAction? = nil, inApp: LogDropSDK.LogDropInAppMessage? = nil, userInfo: [Swift.AnyHashable : Any] = [:])
+  #endif
+}
+public protocol LogDropPushCallbacks : AnyObject {
+  func onNotificationReceived(push: LogDropSDK.LogDropPushPayload)
+  func onNotificationOpened(push: LogDropSDK.LogDropPushPayload)
+  func onSilentPush(push: LogDropSDK.LogDropPushPayload)
+}
+extension LogDropSDK.LogDropPushCallbacks {
+  public func onNotificationReceived(push: LogDropSDK.LogDropPushPayload)
+  public func onNotificationOpened(push: LogDropSDK.LogDropPushPayload)
+  public func onSilentPush(push: LogDropSDK.LogDropPushPayload)
+}
+public protocol LogDropPushDeeplinkHandler : AnyObject {
+  func handle(action: LogDropSDK.LogDropPushAction, push: LogDropSDK.LogDropPushPayload) -> Swift.Bool
+}
+public protocol LogDropInAppLifecycleCallbacks : AnyObject {
+  func onInAppShown(push: LogDropSDK.LogDropPushPayload)
+  func onInAppDismissed(push: LogDropSDK.LogDropPushPayload)
+}
+extension LogDropSDK.LogDropInAppLifecycleCallbacks {
+  public func onInAppShown(push: LogDropSDK.LogDropPushPayload)
+  public func onInAppDismissed(push: LogDropSDK.LogDropPushPayload)
+}
+public protocol LogDropInternalBrowserLifecycleCallbacks : AnyObject {
+  func onInternalBrowserShown(push: LogDropSDK.LogDropPushPayload, url: Swift.String)
+  func onInternalBrowserDismissed(push: LogDropSDK.LogDropPushPayload, url: Swift.String)
+}
+extension LogDropSDK.LogDropInternalBrowserLifecycleCallbacks {
+  public func onInternalBrowserShown(push: LogDropSDK.LogDropPushPayload, url: Swift.String)
+  public func onInternalBrowserDismissed(push: LogDropSDK.LogDropPushPayload, url: Swift.String)
+}
+public enum LogDropPopupShowResult : Swift.Sendable {
+  case shown
+  case nothingToShow
+  case notInitialized
+  public static func == (a: LogDropSDK.LogDropPopupShowResult, b: LogDropSDK.LogDropPopupShowResult) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public enum FrameworkType : Swift.String, Swift.Codable {
   case native
   case reactNative
@@ -96,6 +269,15 @@ public enum FrameworkType : Swift.String, Swift.Codable {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers open class LogDropNotificationServiceExtension : UserNotifications.UNNotificationServiceExtension {
+  #if compiler(>=5.3) && $NonescapableTypes
+  open func logDropConfiguration() -> LogDropSDK.LogDropConfig?
+  #endif
+  @objc override dynamic open func didReceive(_ request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
+  @objc override dynamic open func serviceExtensionTimeWillExpire()
+  @objc override dynamic public init()
+  @objc deinit
+}
 extension Foundation.URLSessionConfiguration {
   @objc dynamic public class func enableConfigurationSwizzle()
 }
@@ -103,6 +285,10 @@ public struct LogDropError : Foundation.LocalizedError {
   public var errorDescription: Swift.String?
   public var statusCode: Swift.Int?
 }
+extension LogDropSDK.LogDropDeeplinkMode : Swift.Hashable {}
+extension LogDropSDK.LogDropDeeplinkMode : Swift.RawRepresentable {}
+extension LogDropSDK.LogDropPopupShowResult : Swift.Equatable {}
+extension LogDropSDK.LogDropPopupShowResult : Swift.Hashable {}
 extension LogDropSDK.FrameworkType : Swift.Equatable {}
 extension LogDropSDK.FrameworkType : Swift.Hashable {}
 extension LogDropSDK.FrameworkType : Swift.RawRepresentable {}
