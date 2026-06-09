@@ -1,12 +1,16 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name LogDropSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
+import AppTrackingTransparency
+import CFNetwork
 import Contacts
+import CoreGraphics
 import CoreLocation
 import CoreTelephony
 import CryptoKit
+import Darwin
 import EventKit
 import Foundation
 @_exported import LogDropSDK
@@ -20,6 +24,7 @@ import Swift
 import SystemConfiguration
 import UIKit
 import UserNotifications
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -30,6 +35,14 @@ public struct LogFlow : Swift.Codable {
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+extension WebKit.WKWebView {
+  @objc @_Concurrency.MainActor @preconcurrency public static func enableLogDropNetworkCaptureSwizzle()
+}
+@_inheritsConvenienceInitializers @objc(LogDropWKWebViewSwizzleHelper) final public class LogDropWKWebViewSwizzleHelper : ObjectiveC.NSObject {
+  @objc public static func enableSwizzling()
+  @objc override dynamic public init()
+  @objc deinit
 }
 public struct LogDropConfig {
   public var apiKey: Swift.String
@@ -43,6 +56,9 @@ public struct LogDropConfig {
   public var inAppLifecycleCallbacks: (any LogDropSDK.LogDropInAppLifecycleCallbacks)?
   public var internalBrowserLifecycleCallbacks: (any LogDropSDK.LogDropInternalBrowserLifecycleCallbacks)?
   public var pushAppGroupSuiteName: Swift.String?
+  public var enableBotDetection: Swift.Bool
+  public var whitelistActionCallback: (any LogDropSDK.LogDropWhitelistActionCallback)?
+  public var riskPolicyActionCallback: (any LogDropSDK.LogDropRiskPolicyActionCallback)?
   public class Builder {
     public init()
     public func setApiKey(_ apiKey: Swift.String) -> LogDropSDK.LogDropConfig.Builder
@@ -66,6 +82,14 @@ public struct LogDropConfig {
     #if compiler(>=5.3) && $NonescapableTypes
     public func setPushAppGroupSuiteName(_ suiteName: Swift.String?) -> LogDropSDK.LogDropConfig.Builder
     #endif
+    public func enableBotDetection(_ enableBotDetection: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
+    public func setCheckBotUsage(_ checkBotUsage: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func onWhitelistActionTaken(_ callback: (any LogDropSDK.LogDropWhitelistActionCallback)?) -> LogDropSDK.LogDropConfig.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func onRiskPolicyActionTaken(_ callback: (any LogDropSDK.LogDropRiskPolicyActionCallback)?) -> LogDropSDK.LogDropConfig.Builder
+    #endif
     public func build() -> LogDropSDK.LogDropConfig
     @objc deinit
   }
@@ -78,6 +102,10 @@ extension Foundation.URLSession {
   #if compiler(>=5.3) && $NonescapableTypes
   public static func sendLogs(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
   #endif
+  public static func getRiskSnapshot() -> LogDropSDK.RiskSnapshot
+  public static func getBotSnapshot() -> LogDropSDK.BotSnapshot
+  public static func getSessionThreatSnapshot() -> LogDropSDK.SessionThreatSnapshot
+  public static func setExplicitAutomationContext(_ enabled: Swift.Bool)
   public static func onRemoteMessageReceived(_ userInfo: [Swift.AnyHashable : Any])
   public static func isLogDropPush(_ userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
   public static func requestPushNotificationAuthorization()
@@ -114,6 +142,33 @@ extension Foundation.URLSession {
   public static func w(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
   #endif
   @objc deinit
+}
+public struct BotSnapshot : Swift.Equatable {
+  public let score: Swift.Int
+  public let label: Swift.String
+  public let evidence: [Swift.String : Swift.String]
+  public let timestamp: Foundation.Date
+  public init(score: Swift.Int, label: Swift.String, evidence: [Swift.String : Swift.String], timestamp: Foundation.Date)
+  public static func == (a: LogDropSDK.BotSnapshot, b: LogDropSDK.BotSnapshot) -> Swift.Bool
+}
+public struct RiskSnapshot : Swift.Equatable {
+  public let score: Swift.Int
+  public let level: Swift.String
+  public let signals: [Swift.String]
+  public let timestamp: Foundation.Date
+  public init(score: Swift.Int, level: Swift.String, signals: [Swift.String], timestamp: Foundation.Date)
+  public static func == (a: LogDropSDK.RiskSnapshot, b: LogDropSDK.RiskSnapshot) -> Swift.Bool
+}
+public struct SessionThreatSnapshot : Swift.Equatable {
+  public let riskScore: Swift.Int
+  public let riskLevel: Swift.String
+  public let botScore: Swift.Int
+  public let botLabel: Swift.String
+  public let posture: Swift.String
+  public let reasons: [Swift.String]
+  public let timestamp: Foundation.Date
+  public init(riskScore: Swift.Int, riskLevel: Swift.String, botScore: Swift.Int, botLabel: Swift.String, posture: Swift.String, reasons: [Swift.String], timestamp: Foundation.Date)
+  public static func == (a: LogDropSDK.SessionThreatSnapshot, b: LogDropSDK.SessionThreatSnapshot) -> Swift.Bool
 }
 public struct AnyCodable : Swift.Codable {
   public let value: Any
@@ -256,6 +311,33 @@ public enum LogDropPopupShowResult : Swift.Sendable {
   public var hashValue: Swift.Int {
     get
   }
+}
+public protocol LogDropWhitelistActionCallback : AnyObject {
+  func onWhitelistActionTaken(_ action: LogDropSDK.LogDropWhitelistAction)
+}
+public protocol LogDropRiskPolicyActionCallback : AnyObject {
+  func onRiskPolicyActionTaken(_ action: LogDropSDK.LogDropRiskPolicyAction)
+}
+public struct LogDropWhitelistAction : Swift.Equatable {
+  public let domain: Swift.String
+  public let path: Swift.String
+  public let method: Swift.String
+  public let blocked: Swift.Bool
+  public let actionsApplied: [Swift.String]
+  public let title: Swift.String?
+  public let message: Swift.String?
+  public let buttonText: Swift.String?
+  public static func == (a: LogDropSDK.LogDropWhitelistAction, b: LogDropSDK.LogDropWhitelistAction) -> Swift.Bool
+}
+public struct LogDropRiskPolicyAction : Swift.Equatable {
+  public let actionIds: [Swift.Int]
+  public let actionNames: [Swift.String]
+  public let matchedEventIds: [Swift.Int]
+  public let matchedRulePriorities: [Swift.Int]
+  public let title: Swift.String?
+  public let message: Swift.String?
+  public let buttonText: Swift.String?
+  public static func == (a: LogDropSDK.LogDropRiskPolicyAction, b: LogDropSDK.LogDropRiskPolicyAction) -> Swift.Bool
 }
 public enum FrameworkType : Swift.String, Swift.Codable {
   case native
