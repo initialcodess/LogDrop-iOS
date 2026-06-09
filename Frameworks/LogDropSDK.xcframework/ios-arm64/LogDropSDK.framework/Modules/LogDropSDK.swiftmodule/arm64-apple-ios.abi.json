@@ -13589,7 +13589,7 @@
       "kind": "StringLiteral",
       "offset": 134,
       "length": 14,
-      "value": "\"2.0.6-alpha1\""
+      "value": "\"2.0.6-alpha2\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
@@ -14595,35 +14595,35 @@
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 23057,
+      "offset": 23064,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 29025,
+      "offset": 29032,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 31127,
+      "offset": 31134,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "Array",
-      "offset": 46073,
+      "offset": 46080,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/LogDropManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 46102,
+      "offset": 46109,
       "length": 3,
       "value": "512"
     },
