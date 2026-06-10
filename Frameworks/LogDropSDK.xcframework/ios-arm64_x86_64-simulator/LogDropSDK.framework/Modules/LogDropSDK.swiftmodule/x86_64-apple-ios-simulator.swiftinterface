@@ -47,7 +47,6 @@ public struct LogDropConfig {
   public var inAppLifecycleCallbacks: (any LogDropSDK.LogDropInAppLifecycleCallbacks)?
   public var internalBrowserLifecycleCallbacks: (any LogDropSDK.LogDropInternalBrowserLifecycleCallbacks)?
   public var pushAppGroupSuiteName: Swift.String?
-  public var enableBotDetection: Swift.Bool
   public var whitelistActionCallback: (any LogDropSDK.LogDropWhitelistActionCallback)?
   public var riskPolicyActionCallback: (any LogDropSDK.LogDropRiskPolicyActionCallback)?
   public class Builder {
@@ -73,8 +72,6 @@ public struct LogDropConfig {
     #if compiler(>=5.3) && $NonescapableTypes
     public func setPushAppGroupSuiteName(_ suiteName: Swift.String?) -> LogDropSDK.LogDropConfig.Builder
     #endif
-    public func enableBotDetection(_ enableBotDetection: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
-    public func setCheckBotUsage(_ checkBotUsage: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
     #if compiler(>=5.3) && $NonescapableTypes
     public func onWhitelistActionTaken(_ callback: (any LogDropSDK.LogDropWhitelistActionCallback)?) -> LogDropSDK.LogDropConfig.Builder
     #endif
