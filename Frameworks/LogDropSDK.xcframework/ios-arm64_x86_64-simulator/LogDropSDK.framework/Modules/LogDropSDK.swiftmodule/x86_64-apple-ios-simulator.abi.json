@@ -13091,76 +13091,76 @@
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 134,
-      "length": 14,
-      "value": "\"2.0.6-alpha4\""
+      "length": 7,
+      "value": "\"2.0.6\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 175,
+      "offset": 168,
       "length": 27,
       "value": "\"https:\/\/server.logdrop.io\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 236,
+      "offset": 229,
       "length": 14,
       "value": "\"\/api\/v2\/sdk\/\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 287,
+      "offset": 280,
       "length": 14,
       "value": "\"mHl9w0BAQEFE\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 342,
+      "offset": 335,
       "length": 394,
       "value": "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw9+vhHStZnwIs8CJK0INVHLIrQKlp+q+6tTnrJjEz0+krm6MJpEaLn3P9McGxvyOR2pEtQetr8scJxBkAEqvfraEiSZsY270FR6kW8Ef5vYmSyHJh5XzoDKJJZPDxP0F4a6znLBHTvTVuFKTkEglu30Jkslc7+eIEvPBnprYTdm00ws81SMkZJNDGtQp7NeCPiPI9yC11ZpduSmTM3MxQRWi1k4p7x\/2\/BCT8YHxPMSAa70NqCDMF11kXm3xdp3bHMYuhY+qit+apXrgWuFEEv3ZnNZV5EYgsiW6231Mr\/hnMWsCwxmilxZaDkdsedwO2lHnODvvfYKybQSXaQmwtQIDAQAB\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "Array",
-      "offset": 774,
+      "offset": 767,
       "length": 35,
       "value": "[\"server.logdrop.io\", \"logdrop.io\"]"
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 849,
+      "offset": 842,
       "length": 11,
       "value": "\"whitelist\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 903,
+      "offset": 896,
       "length": 15,
       "value": "\"ip_reputation\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 961,
+      "offset": 954,
       "length": 15,
       "value": "\"risk_detected\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1013,
+      "offset": 1006,
       "length": 9,
       "value": "\"cleared\""
     },
     {
       "filePath": "\/Users\/ozgurbaykal\/ProjectInitial\/LogDrop_iOS_SDK-With-App\/LogDropSDK\/internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1059,
+      "offset": 1052,
       "length": 9,
       "value": "\"expired\""
     },
