@@ -18,43 +18,43 @@
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		JZ/mQA/wqtqWzxOrQHDDSvdlTrE=
+		Wz98K8PyH1EFmeeRyD416z5/Tqs=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		SzDzs2rvoIk+Fw7LXnpcss1jRSE=
+		ypd1FaE+0ZHyYVTZdgTy4lJylfM=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		FzBwi4tljiFKoysGMoT+Ik02JXs=
+		T+ZBsd6yXUCvCYB5V82reVmeKyQ=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SzDzs2rvoIk+Fw7LXnpcss1jRSE=
+		ypd1FaE+0ZHyYVTZdgTy4lJylfM=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nc1Dn1d+FU4sbxRU7rr5N+0xTIw=
+		8JRj9NKVYhYAlljvbgwGnUAShzM=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		JZ/mQA/wqtqWzxOrQHDDSvdlTrE=
+		Wz98K8PyH1EFmeeRyD416z5/Tqs=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ArXnsHLayd2jDTIfpp+Hnejx4Ps=
+		NjFNS8Ywa307hr4F8MVZtSJKGzQ=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		DNeN8zHxQmdPGAFNlhtyBJ0KLaI=
+		NOKRP/DenwsMZQEgGApuXaddBCM=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ArXnsHLayd2jDTIfpp+Hnejx4Ps=
+		NjFNS8Ywa307hr4F8MVZtSJKGzQ=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lchO73cx1/kFmYoTPRgilF8tcIY=
+		gMG2gO3aA1EEJdX4unwFeXxZBJ4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,70 +81,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JjxCzzVBOC1LapxfKPDNaygbVSLMYoRIii79y60Gk6E=
+			tnD+XkAcVrxWijSt1OF8HItbJzicHGLRXBNCm++mKbU=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HX7vniESfh/YryIDZhNm/xe481dFmT2o2DbgwOEi45M=
+			IwqhNsbI2LIDiG2TgL6UEMN7xXTBqyUUYsa/BtGBBb0=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			POa3ZIj4jZXsMSC8ECZBFbP6gl72PoYexyGSNTtF73M=
+			XmPhIcErwe1ovs36olq1I+ALAIrSt3gUy7tKIPipmF4=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HX7vniESfh/YryIDZhNm/xe481dFmT2o2DbgwOEi45M=
+			IwqhNsbI2LIDiG2TgL6UEMN7xXTBqyUUYsa/BtGBBb0=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dK+/GC1+X1By7dyonwyOZhFr2MTeDiGjmsrOfsXmZSA=
+			IZIVVEukg01+5LCf+u+azJiMPBhubbKYX61fS7BqRMw=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JjxCzzVBOC1LapxfKPDNaygbVSLMYoRIii79y60Gk6E=
+			tnD+XkAcVrxWijSt1OF8HItbJzicHGLRXBNCm++mKbU=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cPsh3YeqRFchD5Sr5YTSZB6gkeQ51Hkg6VLWExbejDI=
+			QVLaGJo6iPvXfD7tokyRVU8YY6MpZyAcltBlqdzHg58=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BLwd59XIxxLiY6I5h8AoaPKWvnS5zGb0+/b0LpNWba0=
+			actrpOcoT/CwY1TbswN+mxxjwWcyYdQnldZ+N7Io38c=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cPsh3YeqRFchD5Sr5YTSZB6gkeQ51Hkg6VLWExbejDI=
+			QVLaGJo6iPvXfD7tokyRVU8YY6MpZyAcltBlqdzHg58=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5fK0Bq7xLhkiVGaszuSTslnakIVFykc2e4oDt0Pw5lM=
+			4R9hAkmRQf/CjtRYcEFpLGI+poigIh8+v0r/oWCqT2I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
