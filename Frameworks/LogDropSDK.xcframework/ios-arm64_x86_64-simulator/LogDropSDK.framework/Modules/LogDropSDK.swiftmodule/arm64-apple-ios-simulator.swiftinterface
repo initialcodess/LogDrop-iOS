@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name LogDropSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import AppTrackingTransparency
 import CFNetwork
@@ -24,6 +24,7 @@ import Swift
 import SystemConfiguration
 import UIKit
 import UserNotifications
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -35,13 +36,16 @@ public struct LogFlow : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+extension WebKit.WKWebView {
+  @objc @_Concurrency.MainActor @preconcurrency public static func enableLogDropNetworkCaptureSwizzle()
+}
+@_inheritsConvenienceInitializers @objc(LogDropWKWebViewSwizzleHelper) final public class LogDropWKWebViewSwizzleHelper : ObjectiveC.NSObject {
+  @objc public static func enableSwizzling()
+  @objc override dynamic public init()
+  @objc deinit
+}
 public struct LogDropConfig {
-  public var appId: Swift.String
-  @available(*, deprecated, message: "Use appId instead.")
-  public var apiKey: Swift.String {
-    get
-    set
-  }
+  public var apiKey: Swift.String
   public var secretKey: Swift.String
   public var baseUrl: Swift.String
   public var isLoggingEnabled: Swift.Bool
@@ -52,12 +56,11 @@ public struct LogDropConfig {
   public var inAppLifecycleCallbacks: (any LogDropSDK.LogDropInAppLifecycleCallbacks)?
   public var internalBrowserLifecycleCallbacks: (any LogDropSDK.LogDropInternalBrowserLifecycleCallbacks)?
   public var pushAppGroupSuiteName: Swift.String?
+  public var enableBotDetection: Swift.Bool
   public var whitelistActionCallback: (any LogDropSDK.LogDropWhitelistActionCallback)?
   public var riskPolicyActionCallback: (any LogDropSDK.LogDropRiskPolicyActionCallback)?
   public class Builder {
     public init()
-    public func setAppId(_ appId: Swift.String) -> LogDropSDK.LogDropConfig.Builder
-    @available(*, deprecated, message: "Use setAppId(_:) instead.")
     public func setApiKey(_ apiKey: Swift.String) -> LogDropSDK.LogDropConfig.Builder
     public func setSecretKey(_ secretKey: Swift.String) -> LogDropSDK.LogDropConfig.Builder
     public func setLoggingEnabled(_ isLoggingEnabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
@@ -79,6 +82,8 @@ public struct LogDropConfig {
     #if compiler(>=5.3) && $NonescapableTypes
     public func setPushAppGroupSuiteName(_ suiteName: Swift.String?) -> LogDropSDK.LogDropConfig.Builder
     #endif
+    public func enableBotDetection(_ enableBotDetection: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
+    public func setCheckBotUsage(_ checkBotUsage: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
     #if compiler(>=5.3) && $NonescapableTypes
     public func onWhitelistActionTaken(_ callback: (any LogDropSDK.LogDropWhitelistActionCallback)?) -> LogDropSDK.LogDropConfig.Builder
     #endif
@@ -94,7 +99,6 @@ extension Foundation.URLSession {
 }
 @_hasMissingDesignatedInitializers public class LogDrop {
   public static func initialize(with config: LogDropSDK.LogDropConfig)
-  public static func setAppId(_ appId: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
   public static func sendLogs(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
   #endif
