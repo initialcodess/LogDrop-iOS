@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/LogDropSDK-Swift.h</key>
 		<data>
-		/7m8w/6EWPkiwRYYjDcnk+vy8S8=
+		zDLFVjq3NfJfVqDVf3+B3H4f9rw=
 		</data>
 		<key>Headers/LogDropSDK.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Wz98K8PyH1EFmeeRyD416z5/Tqs=
+		EKJ0NYSy1LtgvFzcNaPNyYwMv5o=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ypd1FaE+0ZHyYVTZdgTy4lJylfM=
+		8o4Uqz9puOVqtd0x/fYLWC8eeLQ=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ypd1FaE+0ZHyYVTZdgTy4lJylfM=
+		8o4Uqz9puOVqtd0x/fYLWC8eeLQ=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8JRj9NKVYhYAlljvbgwGnUAShzM=
+		9owM+Vasrg6pG51nhl2cONY9keE=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Wz98K8PyH1EFmeeRyD416z5/Tqs=
+		EKJ0NYSy1LtgvFzcNaPNyYwMv5o=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		NjFNS8Ywa307hr4F8MVZtSJKGzQ=
+		el9QsfPCP4iNsSPm8hxSctP6vXI=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NjFNS8Ywa307hr4F8MVZtSJKGzQ=
+		el9QsfPCP4iNsSPm8hxSctP6vXI=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gMG2gO3aA1EEJdX4unwFeXxZBJ4=
+		cORVo/0tw16A6r284lMVRX9wx6s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KEuXgFWbbSWuGho0Hmpuc+c4VPGY8XJBOIXrKiDdh/c=
+			KXevZ/t/5AQNJXGBFtAhdV8pmdGt3C5A+lK/LblqZc8=
 			</data>
 		</dict>
 		<key>Headers/LogDropSDK.h</key>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tnD+XkAcVrxWijSt1OF8HItbJzicHGLRXBNCm++mKbU=
+			nYX1WhfzLrf0Nncdx4A82mDHK/AbEiWaVpWVPax4/50=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IwqhNsbI2LIDiG2TgL6UEMN7xXTBqyUUYsa/BtGBBb0=
+			pakn6WldCzuuNXHIwfUyewYnJkqS1bH6186Wum5frCs=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IwqhNsbI2LIDiG2TgL6UEMN7xXTBqyUUYsa/BtGBBb0=
+			pakn6WldCzuuNXHIwfUyewYnJkqS1bH6186Wum5frCs=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IZIVVEukg01+5LCf+u+azJiMPBhubbKYX61fS7BqRMw=
+			UggAsRb94o0Z18H8tovg9mWzBONNlIDQOKajo4IjT/Q=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tnD+XkAcVrxWijSt1OF8HItbJzicHGLRXBNCm++mKbU=
+			nYX1WhfzLrf0Nncdx4A82mDHK/AbEiWaVpWVPax4/50=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QVLaGJo6iPvXfD7tokyRVU8YY6MpZyAcltBlqdzHg58=
+			LAAM80K6+viVoEyiLMwO5s7UuXGRrMws0jzdTVRWadA=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QVLaGJo6iPvXfD7tokyRVU8YY6MpZyAcltBlqdzHg58=
+			LAAM80K6+viVoEyiLMwO5s7UuXGRrMws0jzdTVRWadA=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4R9hAkmRQf/CjtRYcEFpLGI+poigIh8+v0r/oWCqT2I=
+			8994+W31hqQyr4HerbmvKdVb5XLON9uGgn91G9vl/DQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -24,19 +24,10 @@ import Swift
 import SystemConfiguration
 import UIKit
 import UserNotifications
-import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import ObjectiveC.runtime
-extension WebKit.WKWebView {
-  @objc @_Concurrency.MainActor @preconcurrency public static func enableLogDropNetworkCaptureSwizzle()
-}
-@_inheritsConvenienceInitializers @objc(LogDropWKWebViewSwizzleHelper) final public class LogDropWKWebViewSwizzleHelper : ObjectiveC.NSObject {
-  @objc public static func enableSwizzling()
-  @objc override dynamic public init()
-  @objc deinit
-}
 public struct LogFlow : Swift.Codable {
   #if compiler(>=5.3) && $NonescapableTypes
   public init(name: Swift.String, id: Swift.String, customAttributes: [Swift.String : Swift.String]? = nil)

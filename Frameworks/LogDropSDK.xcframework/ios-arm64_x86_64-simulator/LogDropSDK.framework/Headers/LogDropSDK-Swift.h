@@ -282,9 +282,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
-@import ObjectiveC;
 @import UserNotifications;
-@import WebKit;
 #endif
 
 #endif
@@ -316,18 +314,8 @@ SWIFT_CLASS("_TtC10LogDropSDK35LogDropNotificationServiceExtension")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-SWIFT_CLASS_NAMED("LogDropWKWebViewSwizzleHelper")
-@interface LogDropWKWebViewSwizzleHelper : NSObject
-+ (void)enableSwizzling;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @interface NSURLSessionConfiguration (SWIFT_EXTENSION(LogDropSDK))
 + (void)enableConfigurationSwizzle;
-@end
-
-@interface WKWebView (SWIFT_EXTENSION(LogDropSDK))
-+ (void)enableLogDropNetworkCaptureSwizzle;
 @end
 
 #endif
@@ -622,9 +610,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
-@import ObjectiveC;
 @import UserNotifications;
-@import WebKit;
 #endif
 
 #endif
@@ -656,18 +642,8 @@ SWIFT_CLASS("_TtC10LogDropSDK35LogDropNotificationServiceExtension")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-SWIFT_CLASS_NAMED("LogDropWKWebViewSwizzleHelper")
-@interface LogDropWKWebViewSwizzleHelper : NSObject
-+ (void)enableSwizzling;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @interface NSURLSessionConfiguration (SWIFT_EXTENSION(LogDropSDK))
 + (void)enableConfigurationSwizzle;
-@end
-
-@interface WKWebView (SWIFT_EXTENSION(LogDropSDK))
-+ (void)enableLogDropNetworkCaptureSwizzle;
 @end
 
 #endif
