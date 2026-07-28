@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		yRWc+l5UbD4vFonQBea/Y7ih6Zw=
+		JjJhAj7Go87s1bdAU/rDN6BOeag=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OQ/vmzNMA0wY2gyDwD7WYEs7ey4=
+		Qx+K3yb2pTDI3bPCyMtQ8b4F+Qs=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		yRWc+l5UbD4vFonQBea/Y7ih6Zw=
+		JjJhAj7Go87s1bdAU/rDN6BOeag=
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		u4wRnu2ggxfO6dkDqJ4fJUfeMDE=
+		Ce904KU7YBnCtEefDdizkoC09rg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nsB2YWSI8n6pvNbZ+nOwfyKrejJ5Mr/9l3/xePt79BM=
+			EsYVO/6bp7xa3hk3B4Fv9W8TM++VLyL1lPqBcUE0+qw=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C70oJKcTm0KsxfNwJ944QjgULH6iIrzGuTHYnU5R9OY=
+			rJeDVETNeG84I3KzLo51NrdyzcFZ7x+4dkVnHzNa/pg=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nsB2YWSI8n6pvNbZ+nOwfyKrejJ5Mr/9l3/xePt79BM=
+			EsYVO/6bp7xa3hk3B4Fv9W8TM++VLyL1lPqBcUE0+qw=
 			</data>
 		</dict>
 		<key>Modules/LogDropSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			95fGtqmkml3Cx/PjssDn3taWvO6tM2WGm8JJ7gXXw2c=
+			qGygLw5D4oN5Ix8oIkFeZPWtLEjdrNN/Q68ccKUnXiI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
