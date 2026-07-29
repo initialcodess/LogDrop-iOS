@@ -107,6 +107,7 @@ extension Foundation.URLSession {
   #if compiler(>=5.3) && $NonescapableTypes
   public static func sendLogs(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
   #endif
+  public static func trackCustomEvent(eventName: Swift.String, properties: [Swift.String : Any] = [:])
   public static func getRiskSnapshot() -> LogDropSDK.RiskSnapshot
   public static func getBotSnapshot() -> LogDropSDK.BotSnapshot
   public static func getSessionThreatSnapshot() -> LogDropSDK.SessionThreatSnapshot
