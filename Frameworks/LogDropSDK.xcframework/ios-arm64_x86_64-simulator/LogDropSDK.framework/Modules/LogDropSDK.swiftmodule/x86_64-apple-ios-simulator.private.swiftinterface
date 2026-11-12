@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name LogDropSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AVFoundation
 import AppTrackingTransparency
 import CFNetwork
@@ -15,6 +15,7 @@ import EventKit
 import Foundation
 @_exported import LogDropSDK
 import MachO
+import Network
 import ObjectiveC
 import Photos
 import SQLite3
@@ -101,12 +102,17 @@ public struct LogDropConfig {
 extension Foundation.URLSession {
   public static func enableSessionInitSwizzle()
 }
-@_hasMissingDesignatedInitializers public class LogDrop {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LogDrop : ObjectiveC.NSObject {
   public static func initialize(with config: LogDropSDK.LogDropConfig)
   public static func setAppId(_ appId: Swift.String)
+  public static func isHttpRequestTrackingEligible(_ urlString: Swift.String) -> Swift.Bool
+  @objc(logDropHttpRequestTrackingEligibility:) public static func httpRequestTrackingEligibility(_ urlString: Swift.String) -> Foundation.NSNumber
+  @objc(logDropHttpRequestTrackingDecision:) public static func httpRequestTrackingDecision(_ urlString: Swift.String) -> Foundation.NSDictionary
   #if compiler(>=5.3) && $NonescapableTypes
   public static func sendLogs(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void = { _ in })
   #endif
+  public static func flushOtlpTracing(completion: @escaping (Swift.Bool) -> Swift.Void = { _ in })
+  @objc(logDropFlushOtlpTracing:) public static func otlpFlush(_ completion: @escaping (Foundation.NSNumber) -> Swift.Void)
   public static func trackCustomEvent(eventName: Swift.String, properties: [Swift.String : Any] = [:])
   public static func getRiskSnapshot() -> LogDropSDK.RiskSnapshot
   public static func getBotSnapshot() -> LogDropSDK.BotSnapshot
