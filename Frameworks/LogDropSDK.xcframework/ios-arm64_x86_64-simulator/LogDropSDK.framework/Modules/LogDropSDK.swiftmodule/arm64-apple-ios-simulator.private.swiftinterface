@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name LogDropSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import AppTrackingTransparency
 import CFNetwork
@@ -18,10 +18,12 @@ import MachO
 import Network
 import ObjectiveC
 import Photos
+import QuartzCore
 import SQLite3
 import SafariServices
 import Security
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit
 import UserNotifications
@@ -64,6 +66,7 @@ public struct LogDropConfig {
   public var pushAppGroupSuiteName: Swift.String?
   public var whitelistActionCallback: (any LogDropSDK.LogDropWhitelistActionCallback)?
   public var riskPolicyActionCallback: (any LogDropSDK.LogDropRiskPolicyActionCallback)?
+  public var automaticScreenTracking: Swift.Bool
   public class Builder {
     public init()
     public func setAppId(_ appId: Swift.String) -> LogDropSDK.LogDropConfig.Builder
@@ -95,6 +98,7 @@ public struct LogDropConfig {
     #if compiler(>=5.3) && $NonescapableTypes
     public func onRiskPolicyActionTaken(_ callback: (any LogDropSDK.LogDropRiskPolicyActionCallback)?) -> LogDropSDK.LogDropConfig.Builder
     #endif
+    public func setAutomaticScreenTracking(_ enabled: Swift.Bool) -> LogDropSDK.LogDropConfig.Builder
     public func build() -> LogDropSDK.LogDropConfig
     @objc deinit
   }
@@ -114,6 +118,7 @@ extension Foundation.URLSession {
   public static func flushOtlpTracing(completion: @escaping (Swift.Bool) -> Swift.Void = { _ in })
   @objc(logDropFlushOtlpTracing:) public static func otlpFlush(_ completion: @escaping (Foundation.NSNumber) -> Swift.Void)
   public static func trackCustomEvent(eventName: Swift.String, properties: [Swift.String : Any] = [:])
+  public static func trackScreen(_ name: Swift.String)
   public static func getRiskSnapshot() -> LogDropSDK.RiskSnapshot
   public static func getBotSnapshot() -> LogDropSDK.BotSnapshot
   public static func getSessionThreatSnapshot() -> LogDropSDK.SessionThreatSnapshot
@@ -158,6 +163,15 @@ extension Foundation.URLSession {
   public static func w(_ message: Swift.String, logFlow: LogDropSDK.LogFlow? = nil, file: Swift.String = #file, line: Swift.Int = #line)
   #endif
   @objc deinit
+}
+public protocol LogDropScreenNaming : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var logDropScreenName: Swift.String? { get }
+  #endif
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func logDropScreen(_ name: Swift.String) -> some SwiftUICore.View
+  
 }
 public struct BotSnapshot : Swift.Equatable {
   public let score: Swift.Int
