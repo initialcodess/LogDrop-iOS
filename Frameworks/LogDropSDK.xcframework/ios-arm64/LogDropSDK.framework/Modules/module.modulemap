@@ -7,5 +7,4 @@ framework module LogDropSDK {
 
 module LogDropSDK.Swift {
   header "LogDropSDK-Swift.h"
-  requires objc
 }
