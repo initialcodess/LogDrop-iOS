@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   }
   spec.author       = { 'InitialCode' => 'engineering@initialcode.io' }
   spec.source       = { :git => 'https://github.com/initialcodess/LogDrop-iOS.git', :tag => spec.version }
-  spec.ios.deployment_target = '13.0'
+  spec.ios.deployment_target = '15.0'
   spec.swift_version = '5.0'
   spec.vendored_frameworks = 'Frameworks/LogDropSDK.xcframework'
   spec.resources = ['upload_dsym.sh']
